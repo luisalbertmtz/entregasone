@@ -3,7 +3,7 @@
       <a class="navbar-brand" href="#"><img src="<?php echo PATH; ?>assets/img/logo_alt.png" alt="" width="50" height="auto"></a>
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active fw-bold" aria-current="page" href="#"><h4 id="pagina">Principal</h4></a>
+          <a class="nav-link active fw-bold" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><h4 id="pagina">Principal</h4></a>
         </li>
       </ul>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
@@ -18,7 +18,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill me-3"></i> Principal</a>
+              <a class="nav-link active" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><i class="bi bi-house-fill me-3"></i> Principal</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo PATH?>modulos/Inventario/listado.php"><i class="bi bi-card-checklist me-3"></i>Inventario</a>
@@ -39,6 +39,17 @@
               <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/registro.php"><i class="bi bi-box-arrow-in-left me-3"></i>Registrar Recepción</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Recepciones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-card-checklist me-3"></i> Catálogos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Usuarios/usuarios.php"><i class="bi bi-people-fill me-3"></i>Usuarios</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Proveedores/proveedores.php"><i class="bi bi-person me-3"></i>Proveedores</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Articulos/articulos.php"><i class="bi bi-plus-circle me-3"></i>Artículo</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Categorias/categorias.php"><i class="bi bi-bookmark-plus me-3"></i>Categorías</a></li>
               </ul>
             </li>
             <li class="nav-item">

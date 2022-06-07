@@ -38,11 +38,12 @@ if (!$db->isConnected()){
  * a acceso denegado que a su vez redirige al login
  */
 session_start();
-$id_usuario = $_SESSION['IdUsuario'];
+$id_usuario = $_SESSION['idUsuario'];
+
 if (empty($id_usuario)) {
     $msg = 'Acceso denegado.';
     session_destroy();
-    header('Location: ' . PATH_BACKEND . 'admin/acceso_denegado.php');
+    header('Location: ' . PATH_BACKEND . 'acceso_denegado.php');
     exit;
     die('Acceso denegado');
 }

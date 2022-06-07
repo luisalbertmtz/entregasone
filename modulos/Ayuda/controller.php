@@ -1,5 +1,5 @@
 <?php
-$event = filter_input(INPUT_GET, 'event', FILTER_SANITIZE_STRING);
+$event = filter_input(INPUT_GET, 'event', FILTER_UNSAFE_RAW);
 
 handler($event);
 
