@@ -14,7 +14,7 @@ $oProductos = new Productos();
         <?php
         include_once('../../snippets/header.php');
         ?>
-
+        <div class="container">
         <form class="row g-3 needs-validation" id="formRegister" novalidate>
             <div class="col-12">
                 <label for="articulo" class="form-label">Lista de Artículos</label>
@@ -86,6 +86,7 @@ $oProductos = new Productos();
             <div class="col-12 d-flex justify-content-between mb-5">
                 <button class="btn btn-secondary btn-lg" type="reset">Limpiar </button>
                 <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
+            </div>
             </div>
         </form>
     </main>

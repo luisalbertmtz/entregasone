@@ -14,7 +14,8 @@ $oProductos = new Productos();
         <?php
         include_once('../../snippets/header.php');
         ?>
-        <div class="table-responsive">
+        <div class="container">
+          <div class="table-responsive">
             <table class="table caption-top table-hover table-striped">
                 <thead>
                     <tr>
@@ -57,6 +58,7 @@ $oProductos = new Productos();
                     <canvas class="p-4" id="inventario" width="300" height="230"></canvas>
                 </div>
             </div>
+        </div>
         </div>
 
     </main>

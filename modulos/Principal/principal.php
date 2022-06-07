@@ -16,12 +16,12 @@ include_once('../../snippets/head.php');
 
     <div class="">
       <div class="list-group">
-        <a href="../../modulos/Entrega/registro.php" class="list-group-item list-group-item-action">
+        <a href="../../modulos/Inventario/listado.php" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Inventario</h5>
             <small><i class="bi bi-card-checklist"></i></small>
           </div>
-          <p class="mb-1">Registre una entrega.</p>
+          <p class="mb-1">Ver inventairo</p>
           <small></small>
         </a>
         <a href="../../modulos/Entrega/registro.php" class="list-group-item list-group-item-action">
@@ -40,7 +40,7 @@ include_once('../../snippets/head.php');
           <p class="mb-1">Registre una recepción</p>
           <small class="text-muted"></small>
         </a>
-        <a href="../../modulos/Inventario/listado.php" class="list-group-item list-group-item-action">
+        <a href="../../modulos/Ayuda/ayuda.php" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Ayuda</h5>
             <small class="text-muted"><i class="bi bi-question-circle"></i></small>

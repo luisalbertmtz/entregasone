@@ -14,6 +14,7 @@ $oProductos = new Productos();
         <?php
         include_once('../../snippets/header.php');
         ?>
+        <div class="container">
         <div class="table-responsive">
             <table class="table caption-top table-hover table-striped">
                 <thead>
@@ -76,6 +77,7 @@ $oProductos = new Productos();
                 </tbody>
             </table>
         </div>
+    </div>
 
     </main>
 
