@@ -1,0 +1,4 @@
+# gitignore archivos especiales omitidos para upload version
+
+.vscode/launch.json
+adodb5/config.php
