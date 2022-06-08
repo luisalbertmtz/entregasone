@@ -19,56 +19,107 @@ $oProductos = new Productos();
             <table class="table caption-top table-hover table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Opciones</th>
-                        <th scope="col">Opciones</th>
-                        <th scope="col">Opciones</th>
+                        <th scope="col" class="text-center">#</th>
+                        <th scope="col" class="text-center">Producto</th>
+                        <th scope="col" class="text-center">Cantidad</th>
+                        <th scope="col" class="text-center">Opciones</th>
+                        <th scope="col" class="text-center">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">201</th>
-                        <td>Sábanas</td>
-                        <td class="text-danger fw-bold text-end">-130</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
+                        <th scope="row" class="text-center">201</th>
+                        <td class="text-center">Sábanas Queen</td>
+                        <td class="text-center">-130</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Sábanas</td>
 
                     </tr>
                     <tr>
-                        <th scope="row">206</th>
-                        <td>Colchas</td>
-                        <td class="fw-bold text-end">60</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
+                        <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
                     </tr>
                     <tr>
-                        <th scope="row">208</th>
-                        <td>Cubre almohadas</td>
-                        <td class="fw-bold text-end">150</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
+                    <th scope="row" class="text-center">208</th>
+                        <td class="text-center">Toalla Corporal</td>
+                        <td class="text-center">150</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
                     </tr>
                     <tr>
-                        <th scope="row">208</th>
-                        <td>Sábanas</td>
-                        <td class="fw-bold text-end">130</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
+                    <th scope="row" class="text-center">210</th>
+                        <td class="text-center">Toalla Tapete</td>
+                        <td class="text-center">110</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                   
                     </tr>
                     <tr>
-                        <th scope="row">210</th>
-                        <td>Cobijas</td>
-                        <td class="fw-bold text-end">110</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
-                        <td>Sábanas</td>
-                    </tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
+                        <tr>
+                    <th scope="row" class="text-center">206</th>
+                        <td class="text-center">Sabana de Bebe</td>
+                        <td class="text-center">60</td>
+                        <td class="text-center">Modificar</td>
+                        <td class="text-center">Eliminar</td>
+                        </tr>
                   
                 </tbody>
               

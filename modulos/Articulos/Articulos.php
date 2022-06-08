@@ -19,11 +19,12 @@ $oProductos = new Productos();
             <table class="table caption-top table-hover table-striped">
                 <thead>
                     <tr>
-                        <th scope="col" class="text-center">#</th>
+                        <th scope="col" class="text-center">No.</th>
                         <th scope="col" class="text-center">Producto</th>
                         <th scope="col" class="text-center">Cantidad</th>
                         <th scope="col" class="text-center">Opciones</th>
                         <th scope="col" class="text-center">Opciones</th>
+                        <th scope="col" class="text-center">Fecha de creacion</td>
                        
                     </tr>
                 </thead>
@@ -34,6 +35,8 @@ $oProductos = new Productos();
                         <td class="text-center">-130</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
+                        
                         
 
                     </tr>
@@ -43,6 +46,7 @@ $oProductos = new Productos();
                         <td class="text-center">60</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">208</th>
@@ -50,6 +54,7 @@ $oProductos = new Productos();
                         <td class="text-center">150</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                        
                     </tr>
                     <tr>
@@ -58,6 +63,7 @@ $oProductos = new Productos();
                         <td class="text-center">130</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                      
                     </tr>
                     <tr>
@@ -66,6 +72,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -73,6 +80,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -80,6 +88,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -87,6 +96,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -94,6 +104,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -101,6 +112,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -108,6 +120,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -115,6 +128,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -122,6 +136,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -129,6 +144,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -136,6 +152,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -143,6 +160,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -150,6 +168,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -157,6 +176,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -164,6 +184,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -171,6 +192,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -178,6 +200,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -185,6 +208,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                     <tr>
                         <th scope="row" class="text-center">210</th>
@@ -192,6 +216,7 @@ $oProductos = new Productos();
                         <td class="text-center">110</td>
                         <td class="text-center">Modificar</td>
                         <td class="text-center">Eliminar</td>
+                        <td class="text-center">00/00/00</td>
                     </tr>
                   
                 </tbody>

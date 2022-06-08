@@ -16,7 +16,19 @@ $oProductos = new Productos();
         ?>
 
     </main>
+    <div class="container">
+        <div class="card text-bg-primary mb-5" style="max-width: 30rem;">
+            <div class="card-header text-center">Inventarios One</div>
+            <div class="card-body">
+                <p class="card-text">Inventarios One, nacio de la necesidad de entrega y recepcion de Blancos(Sabanas,Toallas,Wafles etc...)
+            dicha necesidad nos orillo a ser mas efecientes, a minizar procesos realizar la transicion del papel a la tecnologia, misma que se utiliza
+            de manera cotidiana. App inventarios One fue realizada por diversas tecnologias como PHP,Json,Ajax,Bootstrap asi mismo se realizo con una 
+            base de datos MYSQL basado en la tecnologia MARIA DB.
+                </p>
+            </div>
+        </div>
 
+        </div>
     <!-- Footer -->
     <?php
     include_once('../../snippets/footer.php');
