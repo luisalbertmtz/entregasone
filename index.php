@@ -5,7 +5,8 @@
 
 <body class="d-flex flex-column h-100 text-center">
     <!-- Main -->
-    <main class="form-signin flex-shrink-0">
+    <div class="container">
+            <main class="form-signin flex-shrink-0">
         <form id="frm-login">
             <img class="mb-4" src="assets/img/logo_onehoteles.png" alt="" width="100" height="auto">
             <h1 class="h3 mb-3 fw-normal">Control de Inventario</h1>
@@ -23,7 +24,7 @@
 
             <div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox" value="remember-me"> Recordar sesión
+                    <input type="checkbox" value="remember-me"> Recordar sesión.
                 </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">
@@ -31,6 +32,8 @@
                 Ingresar
             </button>
         </form>
+        </div>
+
     </main>
 
     <!-- Footer -->

@@ -15,13 +15,16 @@ $oProductos = new Productos();
         include_once('../../snippets/header.php');
         ?>
         <div class="container">
-          <div class="table-responsive">
+        <div class="table-responsive">
             <table class="table caption-top table-hover table-striped">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Producto</th>
                         <th scope="col">Cantidad</th>
+                        <th scope="col">Opciones</th>
+                        <th scope="col">Opciones</th>
+                        <th scope="col">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,36 +32,53 @@ $oProductos = new Productos();
                         <th scope="row">201</th>
                         <td>Sábanas</td>
                         <td class="text-danger fw-bold text-end">-130</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
+
                     </tr>
                     <tr>
                         <th scope="row">206</th>
                         <td>Colchas</td>
                         <td class="fw-bold text-end">60</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
                     </tr>
                     <tr>
                         <th scope="row">208</th>
                         <td>Cubre almohadas</td>
                         <td class="fw-bold text-end">150</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
                     </tr>
                     <tr>
                         <th scope="row">208</th>
                         <td>Sábanas</td>
                         <td class="fw-bold text-end">130</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
                     </tr>
                     <tr>
                         <th scope="row">210</th>
                         <td>Cobijas</td>
                         <td class="fw-bold text-end">110</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
+                        <td>Sábanas</td>
                     </tr>
+                  
                 </tbody>
+              
             </table>
-
+            </div>
             <div class="col">
                 <div class="card">
                     <canvas class="p-4" id="inventario" width="300" height="230"></canvas>
                 </div>
             </div>
-        </div>
         </div>
 
     </main>
