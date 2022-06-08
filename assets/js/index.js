@@ -19,7 +19,7 @@ $(function(){
                     $('input').val("");
                     $("input, button").attr('disabled', false); 
                     $('#usuario').focus();
-                    $("#message").hide();
+                    //$("#message").hide();
                 }, 5000);
             },
             error: function (data) {

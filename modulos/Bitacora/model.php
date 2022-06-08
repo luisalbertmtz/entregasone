@@ -12,14 +12,11 @@ class Bitacora extends ADODB_Active_Record {
         global $db;
         $db->debug = 0;
         $datos = array();
-        $idUsuario = $this->idUsuario;
-		$idProducto = $this->idProducto;
-        $accion = $this->accion;
-
+        
         $table = "bitacora";
-        $datos['idUsuario'] = $idUsuario;
-        $datos['idproducto'] = $idProducto;
-        $datos['accion'] = utf8_decode($accion);
+        $datos['idUsuario'] = $this->idUsuario;
+        $datos['idproducto'] = $this->idProducto;
+        $datos['accion'] = utf8_decode($this->accion);
         $datos['fechaCreacion'] = date('Y-m-d H:i:s');
         
         $insert = $db->autoExecute($table,$datos,'INSERT');

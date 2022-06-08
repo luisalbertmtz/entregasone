@@ -21,7 +21,7 @@ include_once('../../snippets/head.php');
             <h5 class="mb-1">Inventario</h5>
             <small><i class="bi bi-card-checklist"></i></small>
           </div>
-          <p class="mb-1">Ver inventairo</p>
+          <p class="mb-1">Ver inventario</p>
           <small></small>
         </a>
         <a href="../../modulos/Entrega/registro.php" class="list-group-item list-group-item-action">
