@@ -59,7 +59,7 @@
               <a class="nav-link" href="<?php echo PATH?>modulos/Acerca/acercaApp.php"><i class="bi bi-info-circle me-3"></i> Acerca de la App</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo PATH?>index.php"><i class="bi bi-x-octagon-fill me-3"></i> Salir</a>
+              <a class="nav-link" href="<?php echo PATH?>modulos/Session/logout.php"><i class="bi bi-x-octagon-fill me-3"></i> Salir</a>
             </li>
           </ul>
         </div>

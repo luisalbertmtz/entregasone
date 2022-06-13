@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require('../../adodb5/access_public.php');
+require('../../adodb5/access_private.php');
 ob_end_clean();
 include_once('../../snippets/head.php');
 ?>
@@ -48,7 +48,7 @@ include_once('../../snippets/head.php');
           <p class="mb-1">Sección de Ayuda, manual de usuario</p>
           <small class="text-muted"></small>
         </a>
-        <a href="../../modulos/Inventario/listado.php" class="list-group-item list-group-item-action">
+        <a href="../../modulos/Session/logout.php" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Salir</h5>
             <small class="text-muted"><i class="bi bi-x-octagon-fill"></i></small>
@@ -61,44 +61,12 @@ include_once('../../snippets/head.php');
 
   <!-- Footer -->
   <?php
-    include_once('../../../snippets/footer.php');
+    include_once('../../snippets/footer.php');
   ?>
 
   <!-- Plugins y scripts-->
   <link href="<?php echo PATH ?>assets/css/estadisticas.css" rel="stylesheet">
-  <script src="<?php echo PATH_BACKEND ?>assets/js/chartJs/Chart.min.js"></script>
-  <script>
-    var chartVM = document.getElementById('inventario').getContext('2d');
-    var InventarioGraph = new Chart(chartVM, {
-      type: 'bar',
-      data: {
-        labels: ['Fundas', 'Cubre', 'Sábanas', 'Sobre camas', 'Colchas', 'Edredones'],
-        datasets: [{
-          data: [60, 36, 25, 17, 16, 17, 19],
-
-          borderWidth: 1
-        }]
-      },
-      options: {
-        legend: {
-          display: false
-        },
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true,
-              userCallback: function(label, index, labels) {
-                if (Math.floor(label) === label) {
-                  return label;
-                }
-              },
-            }
-          }]
-        }
-      }
-    });
-  </script>
-
+ 
 </body>
 
 </html>

@@ -27,7 +27,7 @@ include_once('snippets/head.php');
 
             <div class="text-center">
                 <!--button class="btn btn-sm btn-primary" type="submit">Guardar</button-->
-                <a class="btn btn-primary btn-lg" href="<?php echo PATH_BACKEND; ?>index.php" title="Salir del Sistema">Redireccionando...</a>
+                <a class="btn btn-primary btn-lg" href="<?php echo PATH_BACKEND; ?>index.php" title="Ingresar al Sistema">Login</a>
             </div>
     </main>
 
