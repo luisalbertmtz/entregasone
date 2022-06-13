@@ -18,7 +18,7 @@ $oCategorias = new Categorias();
         <div class="container">
 
             <form class="row g-3" id="formRegister">
-                <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco</i></div>
+                <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco / para modificar selecciona de la lista</i></div>
 
                 <div class="form-floating pe-0">
                     <select class="form-select" id="idCategoria" name="idCategoria" aria-label="Artículos Registrados">

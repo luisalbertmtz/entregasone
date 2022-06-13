@@ -20,13 +20,13 @@ $oInventario = new Inventario();
             <table class="table caption-top table-hover table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <!--th scope="col">Usuario</th-->
-                        <th scope="col">Producto</th>
-                        <th scope="col">Proveedor</th>
-                        <!--th scope="col">Categoria</th-->
-                        <th scope="col">Cantidad</th>
-                        <th scope="col" style="width: 350px">Fecha</th>
+                        <th class="text-center"scope="col">#</th>
+                        <th class="text-center"scope="col">Usuario</th>
+                        <th class="text-center"scope="col">Producto</th>
+                        <th class="text-center"scope="col">Proveedor</th>
+                        <th class="text-center"scope="col">Categoria</th>
+                        <th class="text-center"scope="col">Cantidad</th>
+                        <th class="text-center"scope="col" style="width: 350px">Fecha</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,11 +36,11 @@ $oInventario = new Inventario();
                         foreach ($array as $row) {
                             echo "<tr>";
                                 echo "<td class='text-center'>" . $row['idInventario'] . "</td>";
-                                //echo "<td class='text-left'>" . $row['Usuario'] . "</td>";
-                                echo "<td class='text-left'>" . $row['Producto'] . "</td>";
-                                echo "<td class='text-left'>" . $row['Proveedor'] . "</td>";
-                                //echo "<td class='text-left'>" . $row['Categoria'] . "</td>";
-                                echo "<td class='text-left'>" . $row['cantidad'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Usuario'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Producto'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Proveedor'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Categoria'] . "</td>";
+                                echo "<td class='text-center'>" . $row['cantidad'] . "</td>";
                                 echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";
                             echo "</tr>";
                         }

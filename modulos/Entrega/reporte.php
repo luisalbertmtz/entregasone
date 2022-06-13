@@ -21,10 +21,10 @@ $oInventario = new Inventario();
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <!--th scope="col">Usuario</th-->
+                        <th scope="col">Usuario</th>
                         <th scope="col">Producto</th>
                         <th scope="col">Proveedor</th>
-                        <!--th scope="col">Categoria</th-->
+                        <th scope="col">Categoria</th>
                         <th scope="col">Cantidad</th>
                         <th scope="col" style="width: 350px">Fecha</th>
                     </tr>
@@ -36,10 +36,10 @@ $oInventario = new Inventario();
                         foreach ($array as $row) {
                             echo "<tr>";
                                 echo "<td class='text-center'>" . $row['idInventario'] . "</td>";
-                                //echo "<td class='text-left'>" . $row['Usuario'] . "</td>";
+                                echo "<td class='text-left'>" . $row['Usuario'] . "</td>";
                                 echo "<td class='text-left'>" . $row['Producto'] . "</td>";
                                 echo "<td class='text-left'>" . $row['Proveedor'] . "</td>";
-                                //echo "<td class='text-left'>" . $row['Categoria'] . "</td>";
+                                echo "<td class='text-left'>" . $row['Categoria'] . "</td>";
                                 echo "<td class='text-left'>" . $row['cantidad'] . "</td>";
                                 echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";
                             echo "</tr>";

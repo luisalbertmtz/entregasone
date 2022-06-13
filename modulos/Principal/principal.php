@@ -6,6 +6,8 @@ include_once('../../snippets/head.php');
 ?>
 
 <body class="d-flex flex-column h-100">
+
+
   <!-- Begin page content -->
   <main class="flex-shrink-0 container w-100">
 
@@ -14,19 +16,20 @@ include_once('../../snippets/head.php');
     include_once('../../snippets/header.php');
     ?>
 
+
     <div class="">
       <div class="list-group">
         <a href="../../modulos/Inventario/listado.php" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Inventario</h5>
+            <h5 class="mb-1">Pendientes de recepcion</h5>
             <small><i class="bi bi-card-checklist"></i></small>
           </div>
-          <p class="mb-1">Ver inventario</p>
+          <p class="mb-1">Ver pendientes</p>
           <small></small>
         </a>
         <a href="../../modulos/Entrega/registro.php" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Entrega</h5>
+            <h5 class="mb-1">Entregas</h5>
             <small><i class="bi bi-box-arrow-right"></i></small>
           </div>
           <p class="mb-1">Registre una entrega.</p>
@@ -54,6 +57,9 @@ include_once('../../snippets/head.php');
             <small class="text-muted"><i class="bi bi-x-octagon-fill"></i></small>
           </div>
           <p class="mb-1">Cerrar sesión</p>
+
+
+          
         </a>
       </div>
     </div>

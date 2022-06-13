@@ -21,7 +21,7 @@
               <a class="nav-link active" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><i class="bi bi-house-fill me-3"></i> Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo PATH?>modulos/Inventario/listado.php"><i class="bi bi-card-checklist me-3"></i>Inventario</a>
+              <a class="nav-link" href="<?php echo PATH?>modulos/Inventario/listado.php"><i class="bi bi-card-checklist me-3"></i>Pendientes de Recepcion</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,6 +50,7 @@
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Proveedores/proveedores.php"><i class="bi bi-person me-3"></i>Proveedores</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Articulos/articulos.php"><i class="bi bi-plus-circle me-3"></i>Artículo</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Categorias/categorias.php"><i class="bi bi-bookmark-plus me-3"></i>Categorías</a></li>
+               <!-- <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Categorias/categorias.php"><i class="bi bi-journal-bookmark me-3"></i> Reporte de movimientos</a></li>-->
               </ul>
             </li>
             <li class="nav-item">

@@ -22,6 +22,7 @@ $oInventario = new Inventario();
                         <th scope="col">#</th>
                         <th scope="col">Producto</th>
                         <th scope="col">Cantidad</th>
+            
                     </tr>
                 </thead>
                 <tbody>
@@ -33,6 +34,7 @@ $oInventario = new Inventario();
                                 echo "<td class='text-left'>" . $row['idProducto'] . "</td>";
                                 echo "<td class='text-left'>" . $row['Nombre'] . "</td>";
                                 echo "<td class='text-left'>" . $row['total'] . "</td>";
+                                
                             echo "</tr>";
                         }
                     ?>
@@ -50,7 +52,7 @@ $oInventario = new Inventario();
     <link href="<?php echo PATH ?>assets/css/register.css" rel="stylesheet">
     <script>
         $(function() {
-            $("#pagina").html("Inventario");
+            $("#pagina").html("Pendientes de recepcion");
         });
     </script>
 </body>

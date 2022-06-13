@@ -2,7 +2,7 @@
 header('Cache-control: private');
 date_default_timezone_set('America/Mexico_City');
 setlocale(LC_ALL, 'es_MX');
-ini_set('display_errors', 'On');
+ini_set('display_errors', 'Off');
 ini_set('SMTP', '');
 ini_set('sendmail_from', '');
 ini_set('post_max_size', '32M');
