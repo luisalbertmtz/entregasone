@@ -17,30 +17,63 @@ $oProductos = new Productos();
     </main>
 
     <div class="container">
-        <div class="card text-bg-primary mb-5" style="max-width: 18rem;">
-            <div class="card-header text-center">Ver el inventario</div>
+        <div class="card text-bg-primary">
+            <div class="card-header text-center">Entrega de Blancos</div>
             <div class="card-body">
-                <p class="card-text">Presionar el menu del lado derecho superior de la pantalla, 
-                    hacer click en la segunda opcion Inventario.</p>
+                <p class="card-text">
+                    Para registrar una entrega de artículos al Proveedor, debe seguir el siguiente procedimiento.<br />
+                <ul>
+                    <li>1.- Asegurarse que el proveedor esté registrado, en caso contrario consulte la sección de Catálogos.</li>
+                    <li>2.- Seleccionar del menú principal la opción Entregas y del submenú registrar Entrega</li>
+                    <li>3.- Asegurese de tener el producto registrado</li>
+                    <li>4.- Complete el formulario seleccionando el producto, al hacerlo el campo de Proveedor se completa.</li>
+                    <li>5.- Ingrese comentarios adicionales y la cantidad a entregar.</li>
+                </ul>
+                </p>
             </div>
         </div>
-        <div class="card text-bg-info mb-5" style="max-width: 18rem;">
-            <div class="card-header text-center">Ver el catagolo</div>
+        <div class="card text-bg-primary">
+            <div class="card-header text-center">Recepción de Blancos</div>
             <div class="card-body">
-            <p class="card-text">Presionar el menu del lado derecho superior de la pantalla, 
-                hacer click en la opcion catalogo posteriro a ello hacer click en Articulo.</p>
+                <p class="card-text">
+                    Para registrar una recepción de artículos al Proveedor, debe seguir el siguiente procedimiento.<br />
+                <ul>
+                    <li>1.- Asegurarse que el proveedor esté registrado, en caso contrario consulte la sección de Catálogos.</li>
+                    <li>2.- Seleccionar del menú principal la opción Recepción y del submenú registrar Recepción</li>
+                    <li>3.- Asegurese de tener el producto registrado</li>
+                    <li>4.- Complete el formulario seleccionando el producto, al hacerlo el campo de Proveedor se completa.</li>
+                    <li>5.- Ingrese comentarios adicionales y la cantidad recibida.</li>
+                </ul>
+                </p>
             </div>
-            
         </div>
-        <div class="card text-bg-info mb-5" style="max-width: 18rem;">
-            <div class="card-header text-center">Dar la alta a un Proveedor</div>
+        <div class="card text-bg-info">
+            <div class="card-header text-center">Actualización de Catálogos</div>
             <div class="card-body">
-            <p class="card-text">Presionar el menu del lado derecho superior de la pantalla, 
-                hacer click en la opcion catalogo posteriro a ello hacer click en Proveedores.</p>
+                <p class="card-text">
+                    En la aplicación de Inventarios One se manejan diferentes catálogos:
+                <ul>
+                    <li>Usurios</li>
+                    <li>Proveedores</li>
+                    <li>Artículos</li>
+                    <li>Categorías</li>
+                </ul>
+                </p>
+                <p class="card-text">
+                    Si desea crear un nuevo regitros para el catálogo no ingrese el producto para iniciar la búsqueda.<br />
+                    Complete el formulario y presione el botón de Guardar<br />
+                </p>
             </div>
-            
         </div>
-        
+        <div class="card text-bg-primary" >
+            <div class="card-header text-center">Reporte de Inventario</div>
+            <div class="card-body">
+                <p class="card-text">
+                    Este reporte muestra el total de artículos registrados con su cantidad de Ingreso o salida<br />
+                    Por lo que se realiza un cálculo para sumar de forma aritmética cada registro positivo y negativo y mostrar el tota de cada grupo de Producto 
+                </p>
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <?php

@@ -4,8 +4,7 @@ include_once('../../snippets/head.php');
 require '../Proveedores/model.php';
 require 'model.php';
 
-$oArticulos = new Articulos();
-$oProveedores = new Proveedores();
+$oCategorias = new Categorias();
 ?>
 
 <body class="d-flex flex-column h-100">
@@ -17,54 +16,27 @@ $oProveedores = new Proveedores();
         include_once('../../snippets/header.php');
         ?>
         <div class="container">
+
             <form class="row g-3" id="formRegister">
                 <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco</i></div>
 
                 <div class="form-floating pe-0">
-                    <select class="form-select" id="idProducto" name="idProducto" aria-label="Artículos Registrados">
+                    <select class="form-select" id="idCategoria" name="idCategoria" aria-label="Artículos Registrados">
                         <?php
                             $db->debug = 0;
-                            $array = $oArticulos->getListArticulos();
+                            $array = $oCategorias->getListCategorias();
                             echo "<option value='0'>Seleccione el Artículo a Editar</option>";
-                            foreach ($array as $row) {
-                                echo "<option value='" . $row['idProducto'] . "'>" . $row['Nombre'] . "</option>";
-                            }
-                        ?>
-                    </select>
-                    <label for="idProducto" name="idProducto">Artículos Registrados</label>
-                </div>
-
-                <div class="col-md-4 form-floating pe-0">
-                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Proveedor" value="" required>
-                    <label for="Nombre">* Nombre del Proveedor</label>
-                </div>
-
-                <div class="form-floating pe-0">
-                    <select class="form-select" id="idCategoria" name="idCategoria" aria-label="Categoría Registrados">
-                        <?php
-                            $db->debug = 0;
-                            $array = $oArticulos->getListCategoria();
-                            echo "<option value='0'>Seleccione la categoría</option>";
                             foreach ($array as $row) {
                                 echo "<option value='" . $row['idCategoria'] . "'>" . $row['Nombre'] . "</option>";
                             }
                         ?>
                     </select>
-                    <label for="idCategoria">Categorías Registradas</label>
+                    <label for="idCategoria">Artículos Registrados</label>
                 </div>
 
-                <div class="form-floating pe-0">
-                    <select class="form-select" id="idProveedor" name="idProveedor" aria-label="Proveedores Registrados">
-                        <?php
-                           $db->debug = 0;
-                            $array = $oProveedores->getList();
-                            echo "<option value='0'>Seleccione el Proveedor</option>";
-                            foreach ($array as $row) {
-                                echo "<option value='" . $row['idProveedor'] . "'>" . $row['Nombre'] . "</option>";
-                            }
-                        ?>
-                    </select>
-                    <label for="idProveedor">Proveedores Registrados</label>
+                <div class="col-md-4 form-floating pe-0">
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Categoría" value="" required>
+                    <label for="Nombre">* Nombre de la Categoría</label>
                 </div>
 
                 <div class="form-floating pe-0">
@@ -74,7 +46,7 @@ $oProveedores = new Proveedores();
                     </select>
                     <label for="activo">Proveedor Activo/Inactivo</label>
                 </div>
-                    
+
                 <div class="col-md-4 form-floating pe-0">
                     <input type="text" class="form-control disabled" id="fechaCreado" name="fechaCreado" placeholder="Fecha Creación" value="">
                     <label for="fechaCreado">Fecha Creación</label>
@@ -84,13 +56,13 @@ $oProveedores = new Proveedores();
                     <input type="text" class="form-control disabled" id="fechaActualizado" name="fechaActualizado" placeholder="fecha Actualización" value="">
                     <label for="fechaActualizado">fecha Actualización</label>
                 </div>
-                
+
                 <div class="d-grid gap-2">
                     <button class="btn btn-secondary btn-lg" type="reset">Limpiar</button>
                     <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
                 </div>
 
-                <p class="text-center"><a href="listado.php" title="Ver registros">¿Desea ver el listado de Artículos?</a></p>
+                <p class="text-center"><a href="listado.php" title="Ver registros">¿Desea ver el listado de Categorías?</a></p>
             </form>
         </div>
     </main>
@@ -100,11 +72,11 @@ $oProveedores = new Proveedores();
     include_once('../../snippets/footer.php');
     ?>
     <link href="<?php echo PATH ?>assets/css/register.css" rel="stylesheet">
-    <link href="css/articulos.css" rel="stylesheet">
-    <script src="js/articulos.js"></script>
+    <link href="css/categorias.css" rel="stylesheet">
+    <script src="js/categorias.js"></script>
     <script>
         $(function() {
-            $("#pagina").html("Artículos");
+            $("#pagina").html("Categorías");
         });
     </script>
 </body>

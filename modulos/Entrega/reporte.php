@@ -1,9 +1,10 @@
 <?php
-require('../../adodb5/access_public.php');
+require('../../adodb5/access_private.php');
 include_once('../../snippets/head.php');
 require 'model.php';
+require '../Inventario/model.php';
 
-$oProductos = new Productos();
+$oInventario = new Inventario();
 ?>
 
 <body class="d-flex flex-column h-100">
@@ -20,60 +21,30 @@ $oProductos = new Productos();
                 <thead>
                     <tr>
                         <th scope="col">#</th>
+                        <!--th scope="col">Usuario</th-->
                         <th scope="col">Producto</th>
-                        <th scope="col">Categoría</th>
-                        <th scope="col">Comentarios</th>
                         <th scope="col">Proveedor</th>
+                        <!--th scope="col">Categoria</th-->
                         <th scope="col">Cantidad</th>
-                        <th scope="col">Fecha</th>
+                        <th scope="col" style="width: 350px">Fecha</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">201</th>
-                        <td>Sábanas</td>
-                        <td>Blancos</td>
-                        <td>Se entregan sábanas blancas grandes</td>
-                        <td>Servicio Express</td>
-                        <td>130</td>
-                        <td>20/05/2022 13:00 Hrs.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">206</th>
-                        <td>Colchas</td>
-                        <td>Blancos</td>
-                        <td>Se entregan colchas blancas grandes</td>
-                        <td>Servicio Express</td>
-                        <td>60</td>
-                        <td>21/05/2022 12:00 Hrs.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">208</th>
-                        <td>Cubre almohadas</td>
-                        <td>Blancos</td>
-                        <td>Se entregan cubre almohadas blancas medianas</td>
-                        <td>Servicio Express</td>
-                        <td>150</td>
-                        <td>23/05/2022 15:30 Hrs.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">208</th>
-                        <td>Sábanas</td>
-                        <td>Blancos</td>
-                        <td>Se entregan sábanas blancas grandes</td>
-                        <td>Servicio Express</td>
-                        <td>130</td>
-                        <td>25/05/2022 13:00 Hrs.</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">210</th>
-                        <td>Cobijas</td>
-                        <td>Blancos</td>
-                        <td>Se entregan Cobijas negras grandes</td>
-                        <td>Servicio Express</td>
-                        <td>110</td>
-                        <td>26/05/2022 14:00 Hrs.</td>
-                    </tr>
+                    <?php
+                        $db->debug = 0;
+                        $array = $oInventario->getEntrega();
+                        foreach ($array as $row) {
+                            echo "<tr>";
+                                echo "<td class='text-center'>" . $row['idInventario'] . "</td>";
+                                //echo "<td class='text-left'>" . $row['Usuario'] . "</td>";
+                                echo "<td class='text-left'>" . $row['Producto'] . "</td>";
+                                echo "<td class='text-left'>" . $row['Proveedor'] . "</td>";
+                                //echo "<td class='text-left'>" . $row['Categoria'] . "</td>";
+                                echo "<td class='text-left'>" . $row['cantidad'] . "</td>";
+                                echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";
+                            echo "</tr>";
+                        }
+                    ?>
                 </tbody>
             </table>
         </div>

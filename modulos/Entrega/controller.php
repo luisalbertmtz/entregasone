@@ -4,16 +4,28 @@ $event = filter_input(INPUT_GET, 'event', FILTER_UNSAFE_RAW);
 handler($event);
 
 function handler($event) {
-
     global $db;
+    $oArticulos = new Articulos();
     switch ($event) {
         case 'REGISTRO':
-            $oProductos = new Productos();
-            $oProductos->getList($event);
+            $oArticulos->getList($event);
             break;
+        case 'GET_PROV':
+            $array_post = helper_data();
+            $oArticulos->idProducto = $array_post['id'];
+            $oArticulos->getProveedor();
+            break;
+        case 'SET_INVENT':
+            $oInventarios = new Inventario();
+            $array_post = helper_data();
+            $oInventarios->saveEntrega($array_post);
         default:
             break;
     }
+}
+
+function helper_data() {
+    return $array_post = filter_input_array(INPUT_POST);
 }
 
 ?>

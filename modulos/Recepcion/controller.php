@@ -4,28 +4,28 @@ $event = filter_input(INPUT_GET, 'event', FILTER_UNSAFE_RAW);
 handler($event);
 
 function handler($event) {
-
     global $db;
+    $oArticulos = new Articulos();
     switch ($event) {
         case 'REGISTRO':
-            $oBitacora = new Bitacora();
-            $oBitacora->guardaBitacora($event);
+            $oArticulos->getList($event);
             break;
-        case 'GRAFICAMES':
-            $db->debug = 0;
-            $oBitacora = new Bitacora();
-            $resData = $oBitacora->getVisitasMes_Grafica();
-            echo $resData;
+        case 'GET_PROV':
+            $array_post = helper_data();
+            $oArticulos->idProducto = $array_post['id'];
+            $oArticulos->getProveedor();
             break;
-        case 'GRAFICADIA':
-            $db->debug = 0;
-            $oBitacora = new Bitacora();
-            $resData = $oBitacora->getVisitasDia_Grafica();
-            echo $resData;
-            break;
+        case 'SET_INVENT':
+            $oInventarios = new Inventario();
+            $array_post = helper_data();
+            $oInventarios->saveRecepcion($array_post);
         default:
             break;
     }
+}
+
+function helper_data() {
+    return $array_post = filter_input_array(INPUT_POST);
 }
 
 ?>

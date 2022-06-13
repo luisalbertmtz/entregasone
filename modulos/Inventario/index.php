@@ -1,5 +1,6 @@
 <?php
 require '../../../adodb5/access_private.php';
-require 'model.php';
+session_start();
 require 'controller.php';
+require 'model.php';
 ?>

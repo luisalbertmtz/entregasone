@@ -7,25 +7,23 @@ function handler($event) {
 
     global $db;
     switch ($event) {
-        case 'REGISTRO':
-            $oBitacora = new Bitacora();
-            $oBitacora->guardaBitacora($event);
+        case 'GET_ART':
+            $oArticulos = new Articulos();
+            $array_post = helper_data();
+            $oArticulos->idProducto = $array_post['id'];
+            $oArticulos->getArticulID();
             break;
-        case 'GRAFICAMES':
-            $db->debug = 0;
-            $oBitacora = new Bitacora();
-            $resData = $oBitacora->getVisitasMes_Grafica();
-            echo $resData;
-            break;
-        case 'GRAFICADIA':
-            $db->debug = 0;
-            $oBitacora = new Bitacora();
-            $resData = $oBitacora->getVisitasDia_Grafica();
-            echo $resData;
+        case 'CREA_ART':
+            $oArticulos = new Articulos();
+            $array_post = helper_data();
+            $oArticulos->saveArticulo($array_post);
             break;
         default:
             break;
     }
 }
 
+function helper_data() {
+    return $array_post = filter_input_array(INPUT_POST);
+}
 ?>
