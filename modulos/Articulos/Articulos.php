@@ -35,8 +35,8 @@ $oProveedores = new Proveedores();
                 </div>
 
                 <div class="col-md-4 form-floating pe-0">
-                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Proveedor" value="" required>
-                    <label for="Nombre">* Nombre del Proveedor</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Artículo" value="" required>
+                    <label for="Nombre">* Nombre del Artículo</label>
                 </div>
 
                 <div class="form-floating pe-0">
@@ -54,20 +54,6 @@ $oProveedores = new Proveedores();
                 </div>
 
                 <div class="form-floating pe-0">
-                    <select class="form-select" id="idProveedor" name="idProveedor" aria-label="Proveedores Registrados">
-                        <?php
-                           $db->debug = 0;
-                            $array = $oProveedores->getList();
-                            echo "<option value='0'>Seleccione el Proveedor</option>";
-                            foreach ($array as $row) {
-                                echo "<option value='" . $row['idProveedor'] . "'>" . $row['Nombre'] . "</option>";
-                            }
-                        ?>
-                    </select>
-                    <label for="idProveedor">Proveedores Registrados</label>
-                </div>
-
-                <div class="form-floating pe-0">
                     <select class="form-select" id="activo" name="activo" aria-label="Status del Proveedor">
                         <option value='1'>Activo</option>
                         <option value='0'>Inactivo</option>
@@ -75,12 +61,12 @@ $oProveedores = new Proveedores();
                     <label for="activo">Proveedor Activo/Inactivo</label>
                 </div>
                     
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 d-none">
                     <input type="text" class="form-control disabled" id="fechaCreado" name="fechaCreado" placeholder="Fecha Creación" value="">
                     <label for="fechaCreado">Fecha Creación</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 d-none">
                     <input type="text" class="form-control disabled" id="fechaActualizado" name="fechaActualizado" placeholder="fecha Actualización" value="">
                     <label for="fechaActualizado">fecha Actualización</label>
                 </div>

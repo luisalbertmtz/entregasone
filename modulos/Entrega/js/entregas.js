@@ -1,34 +1,5 @@
 $(document).ready(function () {
 
-    $("#idProducto").on("change", function () {
-        var id = $("#idProducto").val();
-        $.ajax({
-            data: { id: id },
-            type: 'POST',
-            url: 'index.php?event=GET_PROV',
-            dataType: "json",
-            beforeSend: function () {
-                $("input").attr('disabled', true);
-                $("button[type='submit']").attr('disabled', true).html('Espere...');
-            },
-            success: function (data) {
-                $("input").attr('disabled', false);
-                $("button[type='submit']").attr('disabled', false).html('Guardar');
-                var dataLength = Object.keys(data).length;
-                if (dataLength > 0) {
-                    $.each(data, function (index, obj) {
-                        $("#idProveedor option[value='" + obj.idProveedor + "']").prop('selected', true);
-                    });
-                }
-            },
-            timeout: 15000
-        }).fail(function (jqXHR, textStatus, errorThrown) {
-            $("input").attr('disabled', false);
-            $("button[type='submit']").attr('disabled', false).html('Guardar');
-            alert('No se puede realizar la transacción');
-        });
-    });
-
     $('#formRegister').on("submit", function (e) {
         e.preventDefault();
         var formData = $(this).serializeArray();

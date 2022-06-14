@@ -10,15 +10,11 @@ function handler($event) {
         case 'REGISTRO':
             $oArticulos->getList($event);
             break;
-        case 'GET_PROV':
-            $array_post = helper_data();
-            $oArticulos->idProducto = $array_post['id'];
-            $oArticulos->getProveedor();
-            break;
         case 'SET_INVENT':
             $oInventarios = new Inventario();
             $array_post = helper_data();
             $oInventarios->saveEntrega($array_post);
+            break;
         default:
             break;
     }

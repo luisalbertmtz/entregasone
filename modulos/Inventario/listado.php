@@ -21,9 +21,8 @@ $oInventario = new Inventario();
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Producto</th>
+                        <th scope="col">Proveedor</th>
                         <th scope="col">Cantidad</th>
-                        
-            
                     </tr>
                 </thead>
                 <tbody>
@@ -31,14 +30,14 @@ $oInventario = new Inventario();
                         $db->debug = 0;
                         $array = $oInventario->getInventario();
                         foreach ($array as $row) {
-                            echo "<tr>";
-                                echo "<td class='text-left'>" . $row['idProducto'] . "</td>";
-                                echo "<td class='text-left'>" . $row['Nombre'] . "</td>";
-                                echo "<td class='text-left'>" . $row['total'] . "</td>";
-                                
-                          
-                                
-                            echo "</tr>";
+                            if(intval($row['total']) < 0 ){
+                                echo "<tr>";
+                                    echo "<td class='text-left'>" . $row['idProducto'] . "</td>";
+                                    echo "<td class='text-left'>" . $row['Nombre'] . "</td>";
+                                    echo "<td class='text-left'>" . $row['Proveedor'] . "</td>";
+                                    echo "<td class='text-left'>" . $row['total'] . "</td>";  
+                                echo "</tr>";
+                            }                            
                         }
                     ?>
                 </tbody>
@@ -55,7 +54,7 @@ $oInventario = new Inventario();
     <link href="<?php echo PATH ?>assets/css/register.css" rel="stylesheet">
     <script>
         $(function() {
-            $("#pagina").html("Pendientes de recepcion");
+            $("#pagina").html("Pendientes de Rec.");
         });
     </script>
 </body>

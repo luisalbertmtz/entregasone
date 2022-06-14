@@ -1,6 +1,14 @@
+<!-- Loader-->
+<div class="preloader">
+	<img src="<?php echo PATH_BACKEND; ?>/assets/img/logo_alt.png" alt="Inventarios One" title="Inventarios One" class="img-resposive logo animated fadeIn">
+</div>
+
 <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Dark offcanvas navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="<?php echo PATH; ?>assets/img/logo_alt.png" alt="" width="50" height="auto"></a>
+      <a href="javascript: history.back()" id="back"><i class="bi bi-chevron-left"></i></a>
+      <a class="navbar-brand" href="#" id="logoRef">
+        <img src="<?php echo PATH; ?>assets/img/logo_alt.png" alt="" width="50" height="auto">
+      </a>
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link active fw-bold" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><h4 id="pagina">Principal</h4></a>

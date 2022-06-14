@@ -17,12 +17,34 @@ body {
   opacity: 1;
   pointer-events: none;
 }
+.preloader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: rgba(255,255,255,0.95);
+  z-index: 9991;
+}
+.preloader > img{
+  max-width: 160px;
+  filter: drop-shadow(3px 3px 7px rgba(0,0,0,0.3));
+}
 /*
   HEADER
 */
   .navbar {
     --bs-bg-opacity: 1;
     background-color: var(--bs-gray-100) !important;
+  }
+  #logoRef > img{
+    position: absolute;
+    left: 37px;
+    top: 0px;
   }
 
   .navbar-dark .navbar-toggler-icon {
@@ -60,6 +82,11 @@ body {
     margin: 7px 0px;
     /* box-shadow: 3px 4px 7px rgb(0 0 0 / 10%); */
   }
+  .card > .navbar-brand{
+    padding: 12px!important;
+    border-radius: 14px;
+    margin: 0;
+  }
 
   .nav-link i {
     font-size: 1.4em;
@@ -84,6 +111,10 @@ body {
     padding: 7px;
   }
 
+  .btn-transparent{
+    background: transparent;
+    border: none;
+  }
   /*
   BODY
 */
@@ -146,7 +177,7 @@ body {
     word-wrap: break-word;
     background-color: var(--bs-white);
     background-clip: border-box;
-    border: 0px solid rgba(0, 0, 0, .125);
+    border: 2px solid #3573b5;
     border-radius: 0.5rem;
     margin-bottom: 16px;
     box-shadow: 7px 4px 17px rgb(0 0 0 / 30%);

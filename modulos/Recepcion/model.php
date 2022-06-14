@@ -17,29 +17,20 @@ class Articulos extends ADODB_Active_Record {
     	return $array;                    
     }
 
-    function getProveedor(){
-        header('Content-Type: application/json');
-        global $db;
-        $db->debug = 0;
-        $idProducto = $this->idProducto;
-        
-        $sql = "SELECT pr.idProveedor FROM productos as p 
-                    INNER JOIN proveedores as pr on p.idProveedor = pr.idProveedor 
-                    WHERE p.idProducto = " . $idProducto;
-        $array = $db->getAll($sql);
-        if(count($array) > 0){
-            echo json_encode($array);
-        }else{
-            echo json_encode(array());
-        }                 
-    }
-
     function getProveedores(){
         global $db;
         $db->debug = 0;
         $sql = "SELECT * FROM proveedores as p ";
         $array = $db->getAll($sql);
         return $array;                
+    }
+
+    function getUsuarios(){
+        global $db;
+        $db->debug = 0;
+        $sql = "SELECT * FROM usuarios as u ";
+        $array = $db->getAll($sql);
+        return $array; 
     }
     
 }

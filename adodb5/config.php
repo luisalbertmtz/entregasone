@@ -1,7 +1,7 @@
 <?php
 	define('version', '1.0.0');  //Version de la Página
-    define('serverUname', 'root');  //Usuario base de datos
-    define('serverPass', 'root');    //password del usuario de base de datos
+    define('serverUname', 'in_colores');  //Usuario base de datos
+    define('serverPass', 'in_colores');    //password del usuario de base de datos
     define('serverDB', 'inventariosone');  //Base de datos a usar
     define('serverHost', 'localhost');   //host del servidor producción
     define('serverType', 'mysqli');    //tipo de base de datos mssqlnative mysqli

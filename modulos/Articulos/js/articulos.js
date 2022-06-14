@@ -19,7 +19,6 @@ $(document).ready(function () {
                     $.each(data, function (index, obj) {
                         $("#Nombre").val(obj.Nombre);
                         $("#idCategoria option[value='" + obj.idCategoria + "']").prop('selected', true);
-                        $("#idProveedor option[value='" + obj.idProveedor + "']").prop('selected', true);
                         $("#activo option[value='" + obj.activo + "']").prop('selected', true);
                         $("#fechaCreado").val(obj.fechaCreacion).addClass("disabled");
                         $("#fechaActualizado").val(obj.fechaActualizacion).addClass("disabled");                        

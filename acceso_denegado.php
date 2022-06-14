@@ -37,6 +37,11 @@ include_once('snippets/head.php');
     ?>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/validaForm.js"></script>
+    <script>
+        $(function(){
+        $("#back").hide();
+        });
+    </script>
 </body>
 
 </html>

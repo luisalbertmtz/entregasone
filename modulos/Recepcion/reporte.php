@@ -21,12 +21,13 @@ $oInventario = new Inventario();
                 <thead>
                     <tr>
                         <th class="text-center"scope="col">#</th>
-                        <th class="text-center"scope="col">Usuario</th>
+                        <th class="text-center"scope="col">Proveedor entrega</th>
+                        <th class="text-center"scope="col">Usuario recibe</th>
                         <th class="text-center"scope="col">Producto</th>
-                        <th class="text-center"scope="col">Proveedor</th>
-                        <th class="text-center"scope="col">Categoria</th>
                         <th class="text-center"scope="col">Cantidad</th>
-                        <th class="text-center"scope="col" style="width: 350px">Fecha</th>
+                        <th class="text-center"scope="col" style="min-width: 180px">Fecha</th>
+                        <th class="text-center"scope="col" style="min-width: 250px">Comentarios</th>
+                        <th class="text-center"scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,12 +37,13 @@ $oInventario = new Inventario();
                         foreach ($array as $row) {
                             echo "<tr>";
                                 echo "<td class='text-center'>" . $row['idInventario'] . "</td>";
-                                echo "<td class='text-center'>" . $row['Usuario'] . "</td>";
-                                echo "<td class='text-center'>" . $row['Producto'] . "</td>";
                                 echo "<td class='text-center'>" . $row['Proveedor'] . "</td>";
-                                echo "<td class='text-center'>" . $row['Categoria'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Usuario'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Producto'] . "</td>";                                
                                 echo "<td class='text-center'>" . $row['cantidad'] . "</td>";
                                 echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";
+                                echo "<td class='text-left'>" . $row['Comentario'] . "</td>";
+                                echo "<td class='text-center'><button class='btn-transparent'><i class='bi bi-pen'></i></button></td>";
                             echo "</tr>";
                         }
                     ?>

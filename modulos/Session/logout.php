@@ -49,6 +49,11 @@
     include_once('../../snippets/footer.php');
     ?>
 </body>
+  <script>
+    $(function(){
+      $("#back").hide();
+    });
+  </script>
 
 </html>
 

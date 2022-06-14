@@ -27,6 +27,7 @@ class Inventario extends ADODB_Active_Record {
         $dataParam['idUsuario'] = $_SESSION['idUsuario'];
         $dataParam['inventario'] = 1;   //Entrega
         $dataParam['fechaCreacion'] = date("Y-m-d H:i:s");
+        $dataParam['fechaActualizacion'] = date("Y-m-d H:i:s");
         $insert = $db->autoExecute($table,$dataParam,'INSERT');
         $lastId = $db->insert_Id();
         if($lastId > 0){
@@ -47,6 +48,7 @@ class Inventario extends ADODB_Active_Record {
         $dataParam['idUsuario'] = $_SESSION['idUsuario'];
         $dataParam['inventario'] = 2;   //Recepcion
         $dataParam['fechaCreacion'] = date("Y-m-d H:i:s");
+        $dataParam['fechaActualizacion'] = date("Y-m-d H:i:s");
         $insert = $db->autoExecute($table,$dataParam,'INSERT');
         $lastId = $db->insert_Id();
         if($lastId > 0){
@@ -67,7 +69,7 @@ class Inventario extends ADODB_Active_Record {
                         INNER JOIN usuarios as us ON inv.idUsuario = us.idUsuario
                         INNER JOIN productos as pr ON inv.idProducto = pr.idProducto
                         INNER JOIN categorias as cat ON pr.idCategoria = cat.idCategoria
-                        INNER JOIN proveedores as prov ON pr.idProveedor = prov.idProveedor
+                        INNER JOIN proveedores as prov ON inv.idProveedor = prov.idProveedor
                         WHERE inventario = 1";
         $array = $db->getAll($sql);
         return $array;                
@@ -81,7 +83,7 @@ class Inventario extends ADODB_Active_Record {
                         INNER JOIN usuarios as us ON inv.idUsuario = us.idUsuario
                         INNER JOIN productos as pr ON inv.idProducto = pr.idProducto
                         INNER JOIN categorias as cat ON pr.idCategoria = cat.idCategoria
-                        INNER JOIN proveedores as prov ON pr.idProveedor = prov.idProveedor
+                        INNER JOIN proveedores as prov ON inv.idProveedor = prov.idProveedor
                         WHERE inventario = 2";
         $array = $db->getAll($sql);
         return $array;                 
@@ -90,10 +92,11 @@ class Inventario extends ADODB_Active_Record {
     function getInventario(){
         global $db;
         $db->debug = 0;
-        $sql = "SELECT SUM(cantidad) as total, p.Nombre, p.idProducto
+        $sql = "SELECT SUM(inv.cantidad) as total, p.Nombre, p.idProducto, pr.Nombre as Proveedor
                     FROM inventario as inv
                         INNER JOIN productos as p on inv.idProducto = p.idProducto
-                            GROUP BY p.Nombre, p.idProducto";
+                        INNER JOIN proveedores as pr on inv.idProveedor = pr.idProveedor
+                            GROUP BY p.Nombre, p.idProducto, pr.Nombre";
         $array = $db->getAll($sql);
         return $array;                
     }

@@ -36,13 +36,13 @@ $oArticulos = new Articulos();
                         <?php
                             $db->debug = 0;
                             $array = $oArticulos->getProveedores();
-                            echo "<option value=''>Seleccione la categoría</option>";
+                            echo "<option value=''>Seleccione el Proveedor</option>";
                             foreach ($array as $row) {
                                 echo "<option value='" . $row['idProveedor'] . "'>" . $row['Nombre'] . "</option>";
                             }
                         ?>
                     </select>
-                    <label for="idProveedor">* Proveedores Registradas</label>
+                    <label for="idProveedor">* Proveedores que recibe</label>
                 </div>
 
                 <div class="form-floating pe-0">
@@ -65,7 +65,7 @@ $oArticulos = new Articulos();
                                 
 
                 
-                <p class="text-center"><a href="../Inventario/listado.php" title="Ver registros">¿Desea ver el reporte de inventario?</a></p>
+                <p class="text-center"><a href="reporte.php" title="Ver registros">¿Desea ver el reporte de Entregas?</a></p>
             </form>
         </div>
         </form>

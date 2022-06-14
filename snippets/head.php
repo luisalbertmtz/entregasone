@@ -30,6 +30,7 @@
     <!-- Plugins y scripts-->
     <script src="<?php echo PATH_BACKEND ?>assets/js/jquery-3.5.1.js"></script>
     <script src="<?php echo PATH_BACKEND ?>assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="<?php echo PATH_BACKEND ?>assets/js/one.js"></script>
     <link href="<?php echo PATH?>assets/css/boostrap/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo PATH?>assets/css/one.css" rel="stylesheet">
     <link href="<?php echo PATH?>assets/css/bootstrap-icons.css" rel="stylesheet">   

@@ -56,12 +56,12 @@ $oProveedores = new Proveedores();
                     <label for="activo">Proveedor Activo/Inactivo</label>
                 </div>
                     
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 d-none">
                     <input type="text" class="form-control disabled" id="fechaCreado" name="fechaCreado" placeholder="Fecha Creación" value="">
                     <label for="fechaCreado">Fecha Creación</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 d-none">
                     <input type="text" class="form-control disabled" id="fechaActualizado" name="fechaActualizado" placeholder="fecha Actualización" value="">
                     <label for="fechaActualizado">fecha Actualización</label>
                 </div>

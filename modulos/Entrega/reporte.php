@@ -15,18 +15,18 @@ $oInventario = new Inventario();
         <?php
         include_once('../../snippets/header.php');
         ?>
-        <div class="container">
+        <div class="container-fluid">
         <div class="table-responsive">
             <table class="table caption-top table-hover table-striped">
                 <thead>
                     <tr>
                         <th class="text-center"scope="col">#</th>
-                        <th class="text-center"scope="col">Usuario</th>
+                        <th class="text-center"scope="col">Usuario entega</th>
+                        <th class="text-center"scope="col" style="min-width: 140px;">Proveedor recibe</th>
                         <th class="text-center"scope="col">Producto</th>
-                        <th class="text-center"scope="col">Proveedor</th>
-                        <th class="text-center"scope="col">Categoria</th>
                         <th class="text-center"scope="col">Cantidad</th>
-                        <th class="text-center"scope="col" style="width: 350px">Fecha</th>
+                        <th class="text-center"scope="col" style="min-width: 180px;">Fecha</th>
+                        <th class="text-center"scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,11 +37,11 @@ $oInventario = new Inventario();
                             echo "<tr>";
                                 echo "<td class='text-center'>" . $row['idInventario'] . "</td>";
                                 echo "<td class='text-center'>" . $row['Usuario'] . "</td>";
-                                echo "<td class='text-center'>" . $row['Producto'] . "</td>";
                                 echo "<td class='text-center'>" . $row['Proveedor'] . "</td>";
-                                echo "<td class='text-center'>" . $row['Categoria'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Producto'] . "</td>";
                                 echo "<td class='text-center'>" . $row['cantidad'] . "</td>";
                                 echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";
+                                echo "<td class='text-center'><button class='btn-transparent'><i class='bi bi-pen'></i></button></td>";
                             echo "</tr>";
                         }
                     ?>

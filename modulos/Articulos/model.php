@@ -26,9 +26,8 @@ class Articulos extends ADODB_Active_Record {
         global $db;
         $db->debug = 0;
         $result = array();
-        $result = $db->getAll("SELECT p.*, c.Nombre as Categoria, pr.Nombre as Proveedor FROM productos as p
+        $result = $db->getAll("SELECT p.*, c.Nombre as Categoria FROM productos as p
                                 INNER JOIN categorias as c ON p.idCategoria = c.idCategoria
-                                INNER JOIN proveedores as pr ON p.idProveedor = pr.idProveedor
                                     WHERE p.activo = 1");
         
         if(count($result) > 0){
