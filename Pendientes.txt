@@ -1,0 +1,8 @@
+-formulario de inventario total para verificar cuanto debe de ser en total y/o con cuanto contamos en stock
+-estoy verificando la manera de como imprimir un reporte por medio de fpdf para mandarlo por medio de un PDF.
+
+-los titulos que me decias que si lo forzas y lo colocas de manera central en una interfaz 
+es decir que si en movil lo colocas y lo dejas centrado y al ver la app en la compu 
+se desfaza un poco.
+
+-refresh donde se inserta en las tablas o como podria inserta si me gustaria hacer una nueva insersion o consulta.

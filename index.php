@@ -8,7 +8,7 @@
     <div class="container">
             <main class="form-signin flex-shrink-0">
         <form id="frm-login">
-            <img class="mb-4" src="assets/img/logo_onehoteles.png" alt="" width="100" height="auto">
+            <img class="mb-4" src="assets/img/logo_onehoteles.png" alt="" width="230" height="auto">
             <h1 class="h3 mb-3 fw-normal">Control de Inventario.</h1>
             
             <div id="message"></div>

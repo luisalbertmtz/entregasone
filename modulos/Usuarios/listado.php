@@ -41,7 +41,7 @@ $oUsuarios = new Usuarios();
                                 echo "<td class='text-left'>" . $row['email'] . "</td>";
                                 echo "<td class='text-left'>" . $row['telefono'] . "</td>";
                                 echo "<td class='text-left'>" . $row['Nombre'] . "</td>";
-                                echo "<td class='text-center'>" . ($row['activo'] == 1 ? "Activo":"Inactivo") . "</td>";
+                                echo "<td class='text-center'>" . ($row['activo'] ==  1? "Activo":"Inactivo") . "</td>";
                             echo "</tr>";
                         }
                         ?>

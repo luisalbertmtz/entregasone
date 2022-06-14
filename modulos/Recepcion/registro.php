@@ -75,7 +75,7 @@ $oArticulos = new Articulos();
     <script src="js/recepcion.js"></script>
     <script>
         $(function() {
-            $("#pagina").html("Recepción artículo(s)");
+            $("#pagina").html("Recepción");
         });
     </script>
 </body>

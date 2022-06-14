@@ -47,8 +47,8 @@ include_once('../../snippets/head.php');
        <div class="card">
           <a class="navbar-brand" href="../../modulos/Inventario/listado.php"><img src="<?php echo PATH; ?>assets/img/reporte.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
           <div class="card-body">
-            <h5 class="card-title">PENDIENTES ENTREGA/RECEPCION</h5>
-            <p class="card-text">Reporte</p>
+            <h5 class="card-title">PENDIENTES</h5>
+            <p class="card-text">Entregas/Recepcion</p>
           </div>
         </div>
       </div>

@@ -80,7 +80,7 @@ $oArticulos = new Articulos();
     <script src="js/entregas.js"></script>
     <script>
         $(function() {
-            $("#pagina").html("Entregar artículo(s)");
+            $("#pagina").html("Entregas");
         });
     </script>
 </body>
