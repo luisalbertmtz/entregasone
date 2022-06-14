@@ -54,11 +54,16 @@ $oArticulos = new Articulos();
                     <input type="number" class="form-control" min="0" id="cantidad" name="cantidad" placeholder="Cantidad" value="" required>
                     <label for="cantidad">* Cantidad entregada</label>
                 </div>
-
-                <div class="d-grid gap-2 pe-0">
+                 
+                         
+                    <div class="d-grid gap-2 pe-0">
                     <button class="btn btn-secondary btn-lg" type="reset">Limpiar</button>
-                    <button class="btn btn-danger btn-lg" type="submit">Entregar</button>
+                    <button class="btn btn-success btn-lg" type="submit">Entregar</button>
+                    
                 </div>
+                                
+                                
+
                 
                 <p class="text-center"><a href="../Inventario/listado.php" title="Ver registros">¿Desea ver el reporte de inventario?</a></p>
             </form>

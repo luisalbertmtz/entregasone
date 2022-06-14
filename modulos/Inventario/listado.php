@@ -22,6 +22,7 @@ $oInventario = new Inventario();
                         <th scope="col">#</th>
                         <th scope="col">Producto</th>
                         <th scope="col">Cantidad</th>
+                        
             
                     </tr>
                 </thead>
@@ -34,6 +35,8 @@ $oInventario = new Inventario();
                                 echo "<td class='text-left'>" . $row['idProducto'] . "</td>";
                                 echo "<td class='text-left'>" . $row['Nombre'] . "</td>";
                                 echo "<td class='text-left'>" . $row['total'] . "</td>";
+                                
+                          
                                 
                             echo "</tr>";
                         }
