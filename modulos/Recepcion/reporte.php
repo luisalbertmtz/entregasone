@@ -12,12 +12,17 @@ $oInventario = new Inventario();
     <main class="container-fluid">
 
         <!-- Header -->
+        <head>
+        <link rel="stylesheet" href="/assets/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+        </head>
         <?php
         include_once('../../snippets/header.php');
         ?>
-        <div class="container">
+        <div class="container-fluid">
         <div class="table-responsive">
-            <table class="table caption-top table-hover table-striped">
+            <table class="table caption-top table-hover table-striped" id="table">
                 <thead>
                     <tr>
                         <th class="text-center"scope="col">#</th>
@@ -25,8 +30,8 @@ $oInventario = new Inventario();
                         <th class="text-center"scope="col">Usuario recibe</th>
                         <th class="text-center"scope="col">Producto</th>
                         <th class="text-center"scope="col">Cantidad</th>
-                        <th class="text-center"scope="col" style="min-width: 180px">Fecha</th>
                         <th class="text-center"scope="col" style="min-width: 250px">Comentarios</th>
+                        <th class="text-center"scope="col" style="min-width: 180px">Fecha</th>                        
                         <th class="text-center"scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -41,8 +46,8 @@ $oInventario = new Inventario();
                                 echo "<td class='text-center'>" . $row['Usuario'] . "</td>";
                                 echo "<td class='text-center'>" . $row['Producto'] . "</td>";                                
                                 echo "<td class='text-center'>" . $row['cantidad'] . "</td>";
-                                echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";
-                                echo "<td class='text-left'>" . $row['Comentario'] . "</td>";
+                                echo "<td class='text-center'>" . $row['Comentario'] . "</td>";
+                                echo "<td class='text-center'>" . $row['fechaCreacion'] . "</td>";                         
                                 echo "<td class='text-center'><button class='btn-transparent'><i class='bi bi-pen'></i></button></td>";
                             echo "</tr>";
                         }
@@ -59,10 +64,17 @@ $oInventario = new Inventario();
     include_once('../../snippets/footer.php');
     ?>
     <link href="<?php echo PATH ?>assets/css/register.css" rel="stylesheet">
+    <script src="/assets/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script>
         $(function() {
             $("#pagina").html("Reporte de Entregas");
         });
+    </script>
+            <script>
+        $(document).ready( function () {
+    $('#table').DataTable();
+} );
     </script>
 </body>
 

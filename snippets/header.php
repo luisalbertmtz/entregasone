@@ -13,6 +13,7 @@
         <li class="nav-item">
           <a class="nav-link active fw-bold" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><h4 id="pagina">Principal</h4></a>
         </li>
+     
       </ul>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
         <span class="navbar-toggler-icon"></span>

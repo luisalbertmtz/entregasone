@@ -26,6 +26,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php echo PATH?>assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/jquery.dataTables.min.css">
 
     <!-- Plugins y scripts-->
     <script src="<?php echo PATH_BACKEND ?>assets/js/jquery-3.5.1.js"></script>
