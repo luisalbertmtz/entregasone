@@ -13,7 +13,7 @@ $oArticulos = new Articulos();
         <!-- Header -->
         <head>
         <link rel="stylesheet" href="/assets/css/jquery.dataTables.min.css">
-        <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
         </head>
 
@@ -66,7 +66,7 @@ $oArticulos = new Articulos();
     <link href="<?php echo PATH ?>assets/css/register.css" rel="stylesheet">
     <script src="<?php echo PATH_BACKEND ?>assets/js/chartJs/Chart.min.js"></script>
     <script src="/assets/js/jquery.dataTables.min.js"></script>
-    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
     <script>
         $(function() {

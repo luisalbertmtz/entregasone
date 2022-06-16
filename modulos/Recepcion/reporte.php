@@ -14,7 +14,7 @@ $oInventario = new Inventario();
         <!-- Header -->
         <head>
         <link rel="stylesheet" href="/assets/css/jquery.dataTables.min.css">
-        <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
         </head>
         <?php
@@ -22,7 +22,7 @@ $oInventario = new Inventario();
         ?>
         <div class="container-fluid">
         <div class="table-responsive">
-            <table class="table caption-top table-hover table-striped" id="table">
+            <table class="table caption-top table-hover table-striped" id="table" class="Display">
                 <thead>
                     <tr>
                         <th class="text-center"scope="col">#</th>
@@ -65,7 +65,7 @@ $oInventario = new Inventario();
     ?>
     <link href="<?php echo PATH ?>assets/css/register.css" rel="stylesheet">
     <script src="/assets/js/jquery.dataTables.min.js"></script>
-    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script>
         $(function() {
             $("#pagina").html("Reporte de Entregas");

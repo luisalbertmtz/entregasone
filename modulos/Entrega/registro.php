@@ -66,6 +66,8 @@ $oArticulos = new Articulos();
 
                 
                 <p class="text-center"><a href="reporte.php" title="Ver registros">¿Desea ver el reporte de Entregas?</a></p>
+                
+
             </form>
         </div>
         </form>
