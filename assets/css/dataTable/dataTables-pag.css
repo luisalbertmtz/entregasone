@@ -1,0 +1,79 @@
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+  color: #FFF!important;
+  background: #003060;
+  border: none;
+  text-shadow: 0px 0px 7px #777;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #002030!important;
+    border: 1px solid #003060;
+    background: #ccc!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 11px;
+    color: #333!important;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #003060;
+    border: solid 1px #003060;
+}
+
+table.dataTable.order-column tbody tr.selected>.sorting_1,
+table.dataTable.order-column tbody tr.selected>.sorting_2,
+table.dataTable.order-column tbody tr.selected>.sorting_3,
+table.dataTable.display tbody tr.selected>.sorting_1,
+table.dataTable.display tbody tr.selected>.sorting_2,
+table.dataTable.display tbody tr.selected>.sorting_3 {
+  background-color: rgb(234 78 27 / 20%) !important;
+}
+
+table.dataTable tbody tr.selected {
+  background-color: rgb(234 78 27 / 20%) !important;
+}
+
+table.dataTable.display tbody tr.even.selected>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.even.selected>.sorting_1 {
+  background-color: rgb(234 78 27 / 20%) !important;
+}
+
+td {
+  cursor: pointer;
+}
+
+.form-control-dataTable {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 1em;
+  max-width: 150px;
+  margin-bottom: 0.5em;
+}
+table.dataTable thead td, table.dataTable thead th {
+  border-bottom: 0 solid#003160!important;
+  background: #003160;
+  color: #fff;
+}
+.inactive {
+  opacity: 0.5;
+}
+.table-responsive {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  width: 98%;
+}
+.table>:not(caption)>*>* {
+  border-bottom-width: 0px;
+}
+.dt-buttons{
+  margin-bottom: 15px;
+}

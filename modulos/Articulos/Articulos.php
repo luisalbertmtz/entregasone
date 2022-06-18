@@ -20,7 +20,7 @@ $oProveedores = new Proveedores();
             <form class="row g-3" id="formRegister">
                 <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco / para modificar selecciona de la lista</i></div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idProducto" name="idProducto" aria-label="Artículos Registrados">
                         <?php
                             $db->debug = 0;
@@ -34,12 +34,12 @@ $oProveedores = new Proveedores();
                     <label for="idProducto" name="idProducto">Artículos Registrados</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Artículo" value="" required>
                     <label for="Nombre">* Nombre del Artículo</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idCategoria" name="idCategoria" aria-label="Categoría Registrados">
                         <?php
                             $db->debug = 0;
@@ -53,7 +53,7 @@ $oProveedores = new Proveedores();
                     <label for="idCategoria">Categorías Registradas</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="activo" name="activo" aria-label="Status del Proveedor">
                         <option value='1'>Activo</option>
                         <option value='0'>Inactivo</option>
@@ -71,7 +71,7 @@ $oProveedores = new Proveedores();
                     <label for="fechaActualizado">fecha Actualización</label>
                 </div>
                 
-                <div class="d-grid gap-2">
+                <div class="d-grid gap-2 ">
                     <button class="btn btn-secondary btn-lg" type="reset">Limpiar</button>
                     <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
                 </div>

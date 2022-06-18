@@ -19,7 +19,7 @@ $oProveedores = new Proveedores();
             <form class="row g-3" id="formRegister">
                 <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco</i></div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idProveedor" name="idProveedor" aria-label="Proveedor Registrados">
                         <?php
                         $db->debug = 0;
@@ -33,22 +33,22 @@ $oProveedores = new Proveedores();
                     <label for="idProveedor" name="idProveedor">Proveedores Registrados</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Proveedor" value="" required>
                     <label for="Nombre">* Nombre del Proveedor</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" value="" required>
                     <label for="email">* E-mail</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" value="" required>
                     <label for="telefono">Teléfono</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="activo" name="activo" aria-label="Status del Proveedor">
                         <option value='1'>Activo</option>
                         <option value='0'>Inactivo</option>

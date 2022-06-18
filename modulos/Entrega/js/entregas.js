@@ -17,12 +17,12 @@ $(document).ready(function () {
                 $("button[type='submit']").attr('disabled', false).html('Guardar');
                 $("input").attr('disabled', false);
                 $("form")[0].reset();
-                alert(data);
+                toastr.success(data);
                 //window.location.href = "registro.php";
             },
             timeout: 15000
         }).fail(function (jqXHR, textStatus, errorThrown) {
-            alert('No se puede realizar la transacción');
+            toastr.danger("No se puede realizar la transacción");
         });
     });
 });

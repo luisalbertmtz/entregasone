@@ -26,13 +26,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php echo PATH?>assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/assets/css/jquery.dataTables.min.css">
 
     <!-- Plugins y scripts-->
     <script src="<?php echo PATH_BACKEND ?>assets/js/jquery-3.5.1.js"></script>
     <script src="<?php echo PATH_BACKEND ?>assets/js/bootstrap/bootstrap.min.js"></script>
+    <link href="<?php echo PATH_BACKEND ?>assets/css/toastr/toastr.css" rel="stylesheet"> 
+    <script src="<?php echo PATH_BACKEND ?>assets/js/toastr/toastr.min.js"></script>
     <script src="<?php echo PATH_BACKEND ?>assets/js/one.js"></script>
     <link href="<?php echo PATH?>assets/css/boostrap/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo PATH?>assets/css/one.css" rel="stylesheet">
-    <link href="<?php echo PATH?>assets/css/bootstrap-icons.css" rel="stylesheet">   
+    <link href="<?php echo PATH?>assets/css/bootstrap-icons.css" rel="stylesheet"> 
 </head>

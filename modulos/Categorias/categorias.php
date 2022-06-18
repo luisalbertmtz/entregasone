@@ -20,7 +20,7 @@ $oCategorias = new Categorias();
             <form class="row g-3" id="formRegister">
                 <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco / para modificar selecciona de la lista</i></div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idCategoria" name="idCategoria" aria-label="Artículos Registrados">
                         <?php
                             $db->debug = 0;
@@ -34,12 +34,12 @@ $oCategorias = new Categorias();
                     <label for="idCategoria">Artículos Registrados</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Categoría" value="" required>
                     <label for="Nombre">* Nombre de la Categoría</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="activo" name="activo" aria-label="Status del Proveedor">
                         <option value='1'>Activo</option>
                         <option value='0'>Inactivo</option>

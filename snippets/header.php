@@ -6,7 +6,7 @@
 <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Dark offcanvas navbar">
     <div class="container-fluid">
       <a href="javascript: history.back()" id="back"><i class="bi bi-chevron-left"></i></a>
-      <a class="navbar-brand" href="#" id="logoRef">
+      <a class="navbar-brand" href="<?php echo PATH; ?>modulos/Principal/principal.php" id="logoRef">
         <img src="<?php echo PATH; ?>assets/img/logo_alt.png" alt="" width="50" height="auto">
       </a>
       <ul class="nav justify-content-center">
@@ -27,34 +27,34 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><i class="bi bi-house-fill me-3"></i> Principal</a>
+              <a class="nav-link" id="home" link="home" aria-current="page" href="<?php echo PATH; ?>modulos/Principal/principal.php"><i class="bi bi-house-fill me-3"></i> Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo PATH?>modulos/Inventario/listado.php"><i class="bi bi-card-checklist me-3"></i>Pendientes de Recepcion</a>
+              <a class="nav-link" id="pendientes" link="pendientes" href="<?php echo PATH?>modulos/Inventario/listado.php"><i class="bi bi-card-checklist me-3"></i>Pendientes de Recepcion</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-box-arrow-right me-3"></i> Entregas
+              <a class="nav-link dropdown-toggle" href="#" link="navBarEntregas" id="navBarEntregas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-box-arrow-right me-3"></i> Entregas
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navBarEntregas">
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/registro.php"><i class="bi bi-box-arrow-right me-3"></i>Registrar Entrega</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Entregas</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" link="navBarRecepciones" id="navBarRecepciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-box-arrow-in-left me-3"></i> Recepciones
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navBarRecepciones">
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/registro.php"><i class="bi bi-box-arrow-in-left me-3"></i>Registrar Recepción</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Recepciones</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" link="navBarCatalogos" id="navBarCatalogos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-card-checklist me-3"></i> Catálogos
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navBarCatalogos">
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Usuarios/usuarios.php"><i class="bi bi-people-fill me-3"></i>Usuarios</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Proveedores/proveedores.php"><i class="bi bi-person me-3"></i>Proveedores</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Articulos/articulos.php"><i class="bi bi-plus-circle me-3"></i>Artículo</a></li>
@@ -63,12 +63,12 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo PATH?>modulos/Ayuda/ayuda.php"><i class="bi bi-question-circle me-3"></i> Ayuda</a>
+              <a class="nav-link" id="ayuda" link="ayuda" href="<?php echo PATH?>modulos/Ayuda/ayuda.php"><i class="bi bi-question-circle me-3"></i> Ayuda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo PATH?>modulos/Acerca/acercaApp.php"><i class="bi bi-info-circle me-3"></i> Acerca de la App</a>
+              <a class="nav-link" id="acercaDe" link="acercaDe" href="<?php echo PATH?>modulos/Acerca/acercaApp.php"><i class="bi bi-info-circle me-3"></i> Acerca de la App</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="<?php echo PATH?>modulos/Session/logout.php"><i class="bi bi-x-octagon-fill me-3"></i> Salir</a>
             </li>
           </ul>

@@ -17,41 +17,39 @@ include_once('../../snippets/head.php');
     ?>
 
     <!-- Entregas -->
-    <div class="container">    
+    <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card">
-          <a class="navbar-brand" href="../../modulos/Entrega/registro.php"><img src="<?php echo PATH; ?>assets/img/entrega-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
-          <div class="card-body">
-            <h5 class="card-title">ENTREGAS DE BLANCOS</h5>
-            <p class="card-text">Registre una entrega</p>
+        <div class="col">
+          <div class="card">
+            <a class="navbar-brand" href="../../modulos/Entrega/registro.php"><img src="<?php echo PATH; ?>assets/img/entrega-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
+            <div class="card-body">
+              <h5 class="card-title">ENTREGAS DE BLANCOS</h5>
+              <p class="card-text">Registre una entrega</p>
+            </div>
           </div>
         </div>
-      </div>
-      
 
-    <!-- Recepcion -->
-      <div class="col">
-       <div class="card">
-          <a class="navbar-brand" href="../../modulos/Recepcion/registro.php"><img src="<?php echo PATH; ?>assets/img/recepcion-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
-          <div class="card-body">
-            <h5 class="card-title">RECEPCION DE BLANCOS</h5>
-            <p class="card-text">Registre una recepción</p>
+        <!-- Recepcion -->
+        <div class="col">
+          <div class="card">
+            <a class="navbar-brand" href="../../modulos/Recepcion/registro.php"><img src="<?php echo PATH; ?>assets/img/recepcion-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
+            <div class="card-body">
+              <h5 class="card-title">RECEPCION DE BLANCOS</h5>
+              <p class="card-text">Registre una recepción</p>
+            </div>
           </div>
         </div>
-      </div>
-
-
-      <!-- Ayuda -->
-      <div class="col">
-       <div class="card">
-          <a class="navbar-brand" href="../../modulos/Inventario/listado.php"><img src="<?php echo PATH; ?>assets/img/reporte.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
-          <div class="card-body">
-            <h5 class="card-title">PENDIENTES</h5>
-            <p class="card-text">Entregas/Recepcion</p>
+        
+        <!-- Ayuda -->
+        <div class="col">
+          <div class="card">
+            <a class="navbar-brand" href="../../modulos/Inventario/listado.php"><img src="<?php echo PATH; ?>assets/img/reporte.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
+            <div class="card-body">
+              <h5 class="card-title">REPORTE</h5>
+              <p class="card-text">Reporte de entregas pendientes</p>
+            </div>
           </div>
         </div>
-      </div>
   </main>
 
   <!-- Footer -->
@@ -62,8 +60,8 @@ include_once('../../snippets/head.php');
   <!-- Plugins y scripts-->
   <link href="<?php echo PATH ?>assets/css/estadisticas.css" rel="stylesheet">
   <script>
-    $(function(){
-      $("#back").hide();
+    $(function() {
+      $("#back").css("visibility", "hidden");
     });
   </script>
 

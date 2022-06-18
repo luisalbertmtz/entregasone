@@ -1,5 +1,14 @@
 $(document).ready(function () {
-
+    toastr.options = {
+        "closeButton": true,
+        "timeOut": 3000,
+        "extendedTimeOut": 0,
+        "progressBar": true,
+        "preventDuplicates": false,
+        "positionClass": "toast-top-center",
+        "tapToDismiss": false
+    };
+    
     $("#idProveedor").on("change", function () {
         var id = $("#idProveedor").val();
         $.ajax({
@@ -25,7 +34,7 @@ $(document).ready(function () {
                         $("#activo option[value='" + obj.activo + "']").prop('selected', true);
                     });
                 } else {
-                    alert("No hay datos encontrados");
+                    toastr.warning("No hay datos encontrados");
                     $("form")[0].reset();
                 }
             },
@@ -34,7 +43,7 @@ $(document).ready(function () {
             console.log(jqXHR, textStatus, errorThrow)
             $("input").attr('disabled', false);
             $("button[type='submit']").attr('disabled', false).html('Guardar');
-            alert('No se puede realizar la transacción');
+            toastr.danger("No se puede realizar la transacción");
         });
     });
 
@@ -54,12 +63,15 @@ $(document).ready(function () {
             success: function (data) {
                 $("button[type='submit']").attr('disabled', false).html('Guardar');
                 $("input").attr('disabled', false);
-                window.location.href = "proveedores.php";
-                alert(data);
+                $("form")[0].reset();
+                toastr.success(data);
+                setTimeout(function(){
+                    window.location.href = "categorias.php";
+                }, 2000);
             },
             timeout: 15000
         }).fail(function (jqXHR, textStatus, errorThrown) {
-            alert('No se puede realizar la transacción');
+            toastr.danger("No se puede realizar la transacción");
         });
     });
 });

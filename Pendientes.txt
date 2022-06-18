@@ -1,8 +1,17 @@
 -formulario de inventario total para verificar cuanto debe de ser en total y/o con cuanto contamos en stock
+    --Pendiente por calcular en el query
+    
 -estoy verificando la manera de como imprimir un reporte por medio de fpdf para mandarlo por medio de un PDF.
+    --El modulo fpdf no debe estar fuera de modulos
+    --El modulo fpdf contiene muchos archivos innecesarios
+    --La configuración de conexión se toma de adodb, ejemplo index.php de cada módulo, access_private trae todos los datos de conexion.
+    --Debemos replantear donde colocar ese módulo para recibir cada reporte
+    --Las tablas de dataTables tiene para exportar a Excel
 
 -los titulos que me decias que si lo forzas y lo colocas de manera central en una interfaz 
 es decir que si en movil lo colocas y lo dejas centrado y al ver la app en la compu 
 se desfaza un poco.
+    --Titulo centrado en cada dispositivo
 
 -refresh donde se inserta en las tablas o como podria inserta si me gustaria hacer una nueva insersion o consulta.
+    --Se muestra alerta y se actualiza la página para mostrar los registros nuevos

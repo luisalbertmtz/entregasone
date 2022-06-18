@@ -17,7 +17,7 @@ $oArticulos = new Articulos();
         <div class="container">
             <form class="row g-3" id="formRegister">
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idProducto" name="idProducto" aria-label="Artículos Registrados" required>
                         <?php
                             $db->debug = 0;
@@ -31,7 +31,7 @@ $oArticulos = new Articulos();
                     <label for="idProducto">* Artículos Registrados</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idProveedor" name="idProveedor" aria-label="Proveedor Registrados" required>
                         <?php
                             $db->debug = 0;
@@ -45,12 +45,12 @@ $oArticulos = new Articulos();
                     <label for="idProveedor">* Proveedores que entrega</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <textarea class="form-control" placeholder="Deje sus comentarios" id="Comentario" name="Comentario" style="height: 100px"></textarea>
                     <label for="Comentario">Comentarios</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <input type="number" class="form-control" min="0" id="cantidad" name="cantidad" placeholder="Cantidad" value="" required>
                     <label for="cantidad">* Cantidad recibida</label>
                 </div>

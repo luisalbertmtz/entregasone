@@ -1,0 +1,6 @@
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    .footer { position: fixed; width: 100%; bottom: 0px; } /* IE10 */
+}
+.navbar-light .navbar-brand{
+   position: relative!important; 
+}

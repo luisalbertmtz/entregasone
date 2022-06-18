@@ -19,7 +19,7 @@ $oUsuarios = new Usuarios();
             <form class="row g-3" id="formRegister">
                 <div class="text-muted"><i>Para crear un nuevo registro deje este campo en blanco</i></div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idUsuario" name="idUsuario" aria-label="Usuarios Registrados">
                         <?php
                         $db->debug = 0;
@@ -33,32 +33,32 @@ $oUsuarios = new Usuarios();
                     <label for="idUsuario" name="idUsuario">Usuarios Registrados</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="text" class="form-control" id="username" name="username" placeholder="Usuario" value="" required>
                     <label for="username">* Nombre de Usuario</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" placeholder="Nombre completo" value="" required>
                     <label for="nombreCompleto">* Nombre Completo</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="" required>
                     <label for="password">* Password</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" value="" required>
                     <label for="email">* E-mail</label>
                 </div>
 
-                <div class="col-md-4 form-floating pe-0">
+                <div class="col-md-4 form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" value="" required>
                     <label for="telefono">Teléfono</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="idRol" name="idRol" aria-label="Rol de usuario">
                         <?php
                         $db->debug = 0;
@@ -72,7 +72,7 @@ $oUsuarios = new Usuarios();
                     <label for="idRol">Roles Registrados</label>
                 </div>
 
-                <div class="form-floating pe-0">
+                <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="activo" name="activo" aria-label="Status usuario">
                         <option value='1'>Activo</option>
                         <option value='0'>Inactivo</option>
