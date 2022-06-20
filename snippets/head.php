@@ -32,8 +32,8 @@
     <script src="<?php echo PATH_BACKEND ?>assets/js/bootstrap/bootstrap.min.js"></script>
     <link href="<?php echo PATH_BACKEND ?>assets/css/toastr/toastr.css" rel="stylesheet"> 
     <script src="<?php echo PATH_BACKEND ?>assets/js/toastr/toastr.min.js"></script>
-    <script src="<?php echo PATH_BACKEND ?>assets/js/one.js"></script>
+    <script src="<?php echo PATH_BACKEND ?>assets/js/one.js?v=<?php echo time();?>"></script>
     <link href="<?php echo PATH?>assets/css/boostrap/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo PATH?>assets/css/one.css" rel="stylesheet">
+    <link href="<?php echo PATH?>assets/css/one.css?v=<?php echo time();?>" rel="stylesheet">
     <link href="<?php echo PATH?>assets/css/bootstrap-icons.css" rel="stylesheet"> 
 </head>

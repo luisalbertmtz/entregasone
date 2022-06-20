@@ -20,15 +20,15 @@ $pdf->SetMargins(10, 10, 10);
 $pdf->AddPage();
 
 
-$pdf->SetFont("Arial", "B", 9);
+$pdf->SetFont("Arial", "B", 7);
 
-$pdf->Cell(10,5, "#", 1, 0,"C");
-$pdf->Cell(15,5, "Proveedor entrega", 1, 0,"C");
+
+$pdf->Cell(20,5, "Proveedor", 1, 0,"C");
 $pdf->Cell(30,5, "Usuario recibe", 1, 0,"C");
-$pdf->Cell(50,5, "Producto", 1, 1,"C");
-$pdf->Cell(10,5, "Cantidad", 1, 1,"C");
-$pdf->Cell(10,5, "Comentarios", 1, 1,"C");
-$pdf->Cell(50,5, "Fecha", 1, 1,"C");
+$pdf->Cell(30,5, "Producto", 1, 0,"C");
+$pdf->Cell(20,5, "Cantidad", 1, 0,"C");
+$pdf->Cell(65,5, "Comentarios", 1,0,"C");
+$pdf->Cell(32,5, "Fecha", 1, 1,"C");
 
 
 
@@ -36,13 +36,13 @@ $pdf->SetFont("Arial","", 9);
 
 while ($fila = $resultado->fetch_assoc()){
 
-$pdf->Cell(10,5,$fila['idInventario'], 1, 0,"C");
-$pdf->Cell(70,5,$fila['Proveedor'], 1, 0,"C");
-$pdf->Cell(70,5,$fila['Usuario'], 1, 0,"C");
-$pdf->Cell(50,5,utf8_decode($fila['Producto']), 1, 1,"C");
-$pdf->Cell(50,5,$fila['cantidad'], 1, 1,"C");
-$pdf->Cell(50,5,$fila['Comentario'], 1, 1,"C");
-$pdf->Cell(50,5,$fila['fechaCreacion'], 1, 1,"C");
+
+$pdf->Cell(20,5,$fila['Proveedor'], 1, 0,"C");
+$pdf->Cell(30,5,$fila['Usuario'], 1, 0,"C");
+$pdf->Cell(30,5,utf8_decode($fila['Producto']), 1, 0,"C");
+$pdf->Cell(20,5,$fila['cantidad'], 1, 0,"C");
+$pdf->Cell(65,5,$fila['Comentario'], 1, 0,"C");
+$pdf->Cell(32,5,$fila['fechaCreacion'], 1, 1,"C");
 }
 
 $pdf->Output();
