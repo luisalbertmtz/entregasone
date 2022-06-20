@@ -53,6 +53,11 @@ $oProveedores = new Proveedores();
                     <label for="idCategoria">Categorías Registradas</label>
                 </div>
 
+                <div class="col-md-6 form-floating pe-0">
+                    <input type="text" class="form-control" id="stockInicial" name="stockInicial" placeholder="Stock Inicial" value="">
+                    <label for="stockInicial">Stock Inicial</label>
+                </div>
+
                 <div class="form-floating pe-0 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <select class="form-select" id="activo" name="activo" aria-label="Status del Proveedor">
                         <option value='1'>Activo</option>

@@ -29,6 +29,7 @@ $(document).ready(function () {
                         $("#idCategoria option[value='" + obj.idCategoria + "']").prop('selected', true);
                         $("#activo option[value='" + obj.activo + "']").prop('selected', true);
                         $("#fechaCreado").val(obj.fechaCreacion).addClass("disabled");
+                        $("#stockInicial").val(obj.stockInicial);
                         $("#fechaActualizado").val(obj.fechaActualizacion).addClass("disabled");                        
                     });
                 } else {
@@ -63,7 +64,7 @@ $(document).ready(function () {
                 $("form")[0].reset();
                 toastr.success(data);
                 setTimeout(function(){
-                    window.location.href = "categorias.php";
+                    window.location.href = "articulos.php";
                 }, 2000);
             },
             timeout: 15000

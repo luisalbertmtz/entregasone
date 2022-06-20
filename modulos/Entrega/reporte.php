@@ -45,6 +45,16 @@ $oInventario = new Inventario();
                         }
                         ?>
                     </tbody>
+                    <tfoot>
+                    <tr>
+                            <th class="text-center" scope="col">#</th>
+                            <th class="text-center" scope="col">Usuario entega</th>
+                            <th class="text-center" scope="col" style="min-width: 140px;">Proveedor recibe</th>
+                            <th class="text-center" scope="col">Producto</th>
+                            <th class="text-center" scope="col">Cantidad</th>
+                            <th class="text-center" scope="col" style="min-width: 180px;">Fecha</th>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>
@@ -70,7 +80,7 @@ $oInventario = new Inventario();
     <script src="<?php echo PATH_BACKEND ?>assets/js/dataTable/buttons.html5.min.js"></script>
     <script src="<?php echo PATH_BACKEND ?>assets/js/dataTable/buttons.print.min.js"></script>
     <script src="<?php echo PATH_BACKEND ?>assets/js/dataTable/dataTables.fixedColumns.min.js"></script>
-
+        
     <!--Data Table CSS-->
     <link rel="stylesheet" href="<?php echo PATH_BACKEND ?>assets/css/dataTable/datatables.css">
     <link rel="stylesheet" href="<?php echo PATH_BACKEND ?>assets/css/dataTable/fixedHeader.dataTables.css">
@@ -85,6 +95,7 @@ $oInventario = new Inventario();
         $(function() {
             $("#pagina").html("Reporte de Entregas");
             table = $('#table').DataTable({
+                fixedHeader: true,
                 stateSave: true,
                 "language": {
                     "select": {

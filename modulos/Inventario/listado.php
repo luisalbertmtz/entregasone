@@ -23,6 +23,7 @@ $oInventario = new Inventario();
                             <th scope="col">#</th>
                             <th scope="col">Producto</th>
                             <th scope="col">Cantidad Pendiente</th>
+                            <th scope="col">Cantidad Stock</th>
                             <th scope="col">Proveedor</th>
                         </tr>
                     </thead>
@@ -32,11 +33,12 @@ $oInventario = new Inventario();
                         $array = $oInventario->getInventario();
                         
                         foreach ($array as $row) {
-                            if (intval($row['total']) < 0) {
+                            if (intval($row['total']) <= 0) {
                                 echo "<tr>";
                                 echo "<td class='text-left'>" . $row['idProducto'] . "</td>";
                                 echo "<td class='text-left'>" . $row['Nombre'] . "</td>";
                                 echo "<td class='text-left'>" . $row['total'] . "</td>";
+                                echo "<td class='text-left'>" . ($row['stockInicial'] + $row['total']) . "</td>";
                                 echo "<td class='text-left'>" . $row['Proveedor'] . "</td>";
                                 echo "</tr>";
                             }

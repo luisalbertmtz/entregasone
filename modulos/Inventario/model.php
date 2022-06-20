@@ -92,7 +92,7 @@ class Inventario extends ADODB_Active_Record {
     function getInventario(){
         global $db;
         $db->debug = 0;
-        $sql = "SELECT SUM(inv.cantidad) as total, p.Nombre, p.idProducto, pr.Nombre as Proveedor
+        $sql = "SELECT SUM(inv.cantidad) as total, p.Nombre, p.idProducto, p.stockInicial, pr.Nombre as Proveedor
                     FROM inventario as inv
                         INNER JOIN productos as p on inv.idProducto = p.idProducto
                         INNER JOIN proveedores as pr on inv.idProveedor = pr.idProveedor

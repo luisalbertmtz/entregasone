@@ -38,6 +38,13 @@ $oProductos = new Productos();
             <div class="card-header text-center">Mejoras</div>
             <div class="card-body">
                 <p class="card-text">
+                    <b>v1.2 Detalle de cambios:</b><br />
+                    Integración de fpdf Reportes personalizados para entrega y empresión<br />
+                    Ajuste de Reporte de Inventarios pendientes, se agrega inventario en 0 y stock Actual<br />
+                    Se integra el stock Inicial calculado en la tabla de Artículos <br />
+                </p>
+
+                <p class="card-text">
                     <b>v1.1 Detalle de cambios:</b><br />
                     Ajustes en la interfáz de usuario, especialmente rejillas responsivas de dataTable<br />
                     Nuevos estilos integrados en las alertas de confirmación<br />

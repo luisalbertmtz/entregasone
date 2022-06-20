@@ -51,6 +51,15 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" link="navBarEntregas" id="navBarEntregas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-box-arrow-right me-3"></i> Reportes PDF
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navBarEntregas">
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/registro.php"><i class="bi bi-box-arrow-right me-3"></i>Reporte 1</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" link="navBarCatalogos" id="navBarCatalogos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-card-checklist me-3"></i> Catálogos
               </a>
