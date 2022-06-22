@@ -34,20 +34,20 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" link="navBarEntregas" id="navBarEntregas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-box-arrow-right me-3"></i> Entregas
+                <i class="bi bi-box-arrow-right me-3"></i> Blancos Sucios
               </a>
               <ul class="dropdown-menu" aria-labelledby="navBarEntregas">
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/registro.php"><i class="bi bi-box-arrow-right me-3"></i>Registrar Entrega</a></li>
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Entregas</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/registro.php"><i class="bi bi-box-arrow-right me-3"></i>Registrar Blanco sucio</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Entrega/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Blanco sucio</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" link="navBarRecepciones" id="navBarRecepciones" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-box-arrow-in-left me-3"></i> Recepciones
+              <i class="bi bi-box-arrow-in-left me-3"></i> Blancos Limpios
               </a>
               <ul class="dropdown-menu" aria-labelledby="navBarRecepciones">
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/registro.php"><i class="bi bi-box-arrow-in-left me-3"></i>Registrar Recepción</a></li>
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Recepciones</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/registro.php"><i class="bi bi-box-arrow-in-left me-3"></i>Registrar Blancos limpios</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Recepcion/reporte.php"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte de Blancos limpios</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -55,8 +55,8 @@
                 <i class="bi bi-box-arrow-right me-3"></i> Imprimir PDF
               </a>
               <ul class="dropdown-menu" aria-labelledby="navBarEntregas">
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteEntrega.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte Entrega</a></li>
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteRecepcion.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte Recepcion</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteEntrega.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte Entrega Blancos sucios</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteRecepcion.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte Recepcion Blancos limpios</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

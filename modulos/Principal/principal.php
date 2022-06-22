@@ -23,7 +23,7 @@ include_once('../../snippets/head.php');
           <div class="card">
             <a class="navbar-brand" href="../../modulos/Entrega/registro.php"><img src="<?php echo PATH; ?>assets/img/entrega-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
-              <h5 class="card-title">ENTREGAS DE BLANCOS</h5>
+              <h5 class="card-title">BLANCOS SUCIOS</h5>
               <p class="card-text">Registre una entrega</p>
             </div>
           </div>
@@ -34,7 +34,7 @@ include_once('../../snippets/head.php');
           <div class="card">
             <a class="navbar-brand" href="../../modulos/Recepcion/registro.php"><img src="<?php echo PATH; ?>assets/img/recepcion-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
-              <h5 class="card-title">RECEPCION DE BLANCOS</h5>
+              <h5 class="card-title">BLANCOS SUCIOS</h5>
               <p class="card-text">Registre una recepción</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ include_once('../../snippets/head.php');
           <div class="card">
             <a class="navbar-brand" href="../../modulos/Inventario/listado.php"><img src="<?php echo PATH; ?>assets/img/reporte.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
-              <h5 class="card-title">REPORTE</h5>
+              <h5 class="card-title">REPORTE DE PENDIENTES</h5>
               <p class="card-text">Reporte de entregas pendientes</p>
             </div>
           </div>

@@ -49,7 +49,8 @@ $oProductos = new Productos();
                     Ajustes en la interfáz de usuario, especialmente rejillas responsivas de dataTable<br />
                     Nuevos estilos integrados en las alertas de confirmación<br />
                     Marcado distintivo del item seleccionado del Menú principal<br />
-                    Detalles de versiones en la sección de Acerca de.
+                    Detalles de versiones en la sección de Acerca <b>
+                    ajunte en la interfaz del usuario en el Login</b>
                 </p>
                 <p class="card-text">
                     <b>v1.0 Detalle de cambios:</b><br />
@@ -59,7 +60,8 @@ $oProductos = new Productos();
                     Alta, baja y consulta de catalogos: articulo, categorías, proveedores y usuarios<br />
                     Reportes básicos de Entregas y consultas<br />
                     Reporte de inventarios<br />
-                    Sección de Ayuda y acerca de la aplicación
+                    Sección de Ayuda y acerca de la aplicación<br/>
+                    Reporte personalizados paraimprimir en PDF integrados <br/>
                 </p>
             </div>
         </div>

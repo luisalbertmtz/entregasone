@@ -36,7 +36,8 @@ $oArticulos = new Articulos();
                         <?php
                         $db->debug = 0;
                         $array = $oArticulos->getProveedores();
-                        echo "<option value=''>Seleccione el Proveedor</option>";
+                        //se coloca el proveedor fijo por peticion de el usuario
+                        echo "<label value=''>Seleccione el Proveedor</label>";
                         foreach ($array as $row) {
                             echo "<option value='" . $row['idProveedor'] . "'>" . $row['Nombre'] . "</option>";
                         }
