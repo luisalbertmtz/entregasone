@@ -15,7 +15,7 @@
 
     <!-- Login-->
     <form class="form-signin">
-      <h5 class="text-center font-weight-bold">Fin de Sesión</h5>
+      <h2 class="text-center font-weight-bold">Fin de Sesión</h2>
       
       <!-- Formulario-->
       <div class="content-form" style="display: block">
@@ -25,9 +25,9 @@
           <i class="flaticon-ui font-icon session-icons"></i>
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <h3 class="text-center font-weight-bold">Su sesión ha finalizado<br /> Lo esperamos pronto</h3>
-        </div>
+        </div>-->
         
         <br />
         <div class="text-center">

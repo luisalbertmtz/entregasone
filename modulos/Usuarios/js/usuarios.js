@@ -69,7 +69,7 @@ $(document).ready(function () {
                 $("form")[0].reset();
                 toastr.success(data);
                 setTimeout(function(){
-                    window.location.href = "categorias.php";
+                    window.location.href = "usuarios.php";
                 }, 2000);
             },
             timeout: 15000

@@ -44,7 +44,7 @@ $pdf->Cell(20,5,$fila['cantidad'], 1, 0,"C");
 $pdf->Cell(65,5,$fila['Comentario'], 1, 0,"C");
 $pdf->Cell(32,5,$fila['fechaCreacion'], 1, 1,"C");
 }
-
+$pdf->Cell(300, 25, utf8_decode('Sello y Firma  ' . "________________________ " . ''), 10, 5, 'C');
 $pdf->Output();
 
 ?>

@@ -46,7 +46,8 @@ while ($fila = $resultado->fetch_assoc()) {
     $pdf->Cell(32, 5, $fila['fechaCreacion'], 1, 1, "C");
 }
 
-$pdf->Cell(80, 18, utf8_decode('Firma del Hotel ' . "________________________ " . ''), 10, 5, 'C');
+$pdf->Cell(300, 25, utf8_decode('Sello y Firma  ' . "________________________ " . ''), 10, 5, 'C');
+
 
 
 

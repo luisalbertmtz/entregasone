@@ -55,7 +55,7 @@
                 <i class="bi bi-box-arrow-right me-3"></i> Imprimir PDF
               </a>
               <ul class="dropdown-menu" aria-labelledby="navBarEntregas">
-                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteEntrega.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right me-3"></i>Reporte Entrega</a></li>
+                <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteEntrega.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte Entrega</a></li>
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteRecepcion.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte Recepcion</a></li>
               </ul>
             </li>

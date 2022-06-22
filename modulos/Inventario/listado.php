@@ -119,9 +119,9 @@ $oInventario = new Inventario();
                 buttons: [{
                     extend: 'excelHtml5',
                     text: 'Exportar a Excel',
-                    className: 'btn btn-sm btn-secondary',
+                    className: 'btn btn-sm btn-primary',
                     title: '',
-                    messageTop: 'Listado',
+                    messageTop: 'Reporte de pendientes de recepcion',
                     orientation: 'landscape',
                     pageSize: 'letter',
                     footer: true
