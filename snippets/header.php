@@ -3,6 +3,10 @@
 	<img src="<?php echo PATH_BACKEND; ?>/assets/img/logo_alt.png" alt="Inventarios One" title="Inventarios One" class="img-resposive logo animated fadeIn">
 </div>
 
+<?php 
+  session_start();
+?>
+
 <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Dark offcanvas navbar">
     <div class="container-fluid">
       <a href="javascript: history.back()" id="back"><i class="bi bi-chevron-left"></i></a>
@@ -51,7 +55,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" link="navBarEntregas" id="navBarEntregas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" link="navImprimir" id="navImprimir" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-box-arrow-right me-3"></i> Imprimir PDF
               </a>
               <ul class="dropdown-menu" aria-labelledby="navBarEntregas">
@@ -59,6 +63,7 @@
                 <li><a class="dropdown-item" href="<?php echo PATH?>modulos/fpdf/reporteRecepcion.php" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-bar-graph me-3"></i>Reporte completo Blancos limpios</a></li>
               </ul>
             </li>
+            <?php if($_SESSION['idRol'] == 1) { ?>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" link="navBarCatalogos" id="navBarCatalogos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-card-checklist me-3"></i> Catálogos
@@ -71,6 +76,7 @@
                <!-- <li><a class="dropdown-item" href="<?php echo PATH?>modulos/Categorias/categorias.php"><i class="bi bi-journal-bookmark me-3"></i> Reporte de movimientos</a></li>-->
               </ul>
             </li>
+            <?php } ?>
             <li class="nav-item">
               <a class="nav-link" id="ayuda" link="ayuda" href="<?php echo PATH?>modulos/Ayuda/ayuda.php"><i class="bi bi-question-circle me-3"></i> Ayuda</a>
             </li>

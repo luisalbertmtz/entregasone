@@ -4,6 +4,7 @@ include_once('../../snippets/head.php');
 require 'model.php';
 
 $oUsuarios = new Usuarios();
+
 ?>
 
 <body class="d-flex flex-column h-100">
