@@ -1,5 +1,6 @@
--formulario de inventario total para verificar cuanto debe de ser en total y/o con cuanto contamos en stock
+﻿-formulario de inventario total para verificar cuanto debe de ser en total y/o con cuanto contamos en stock
     --Pendiente por calcular en el query
+
     
 -estoy verificando la manera de como imprimir un reporte por medio de fpdf para mandarlo por medio de un PDF.
     --El modulo fpdf no debe estar fuera de modulos
@@ -15,3 +16,8 @@ se desfaza un poco.
 
 -refresh donde se inserta en las tablas o como podria inserta si me gustaria hacer una nueva insersion o consulta.
     --Se muestra alerta y se actualiza la página para mostrar los registros nuevos
+
+se realizo un reporte por dia para ver imprmir lo recibido y lo entregados
+asi mismo se le coloco el titulo 
+
+se realiza una nueva interfaz para para facilitar la impresion del dia.

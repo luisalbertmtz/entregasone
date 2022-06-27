@@ -37,6 +37,15 @@ $oProductos = new Productos();
         <div class="card text-bg-primary mb-5">
             <div class="card-header text-center">Mejoras</div>
             <div class="card-body">
+            <p class="card-text">
+                    <b>v1.3 Detalle de cambios:</b><br />
+                    Integración al modulo de fpdf reporte de lo capturado en el dia<br />
+                    Se modifico la interfaz de pantalla principal a solicitud del usuario<br />
+                    Se modifico titulos en los reportes en general <br />
+                    Menu lateral se modifico la visualizacion de los reportes de blanco sucios, blanco limpios
+                    y se coloco en la pantalla principal <br />
+                    
+                </p>
                 <p class="card-text">
                     <b>v1.2 Detalle de cambios:</b><br />
                     Integración de fpdf Reportes personalizados para entrega y empresión<br />

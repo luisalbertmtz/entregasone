@@ -77,7 +77,7 @@ $oArticulos = new Articulos();
     <script src="js/entregas.js"></script>
     <script>
         $(function() {
-            $("#pagina").html("Entregas");
+            $("#pagina").html("Entregas Blancos sucios");
         });
     </script>
 </body>

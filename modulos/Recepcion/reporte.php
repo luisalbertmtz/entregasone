@@ -85,7 +85,7 @@ $oInventario = new Inventario();
 
     <script>
         $(function() {
-            $("#pagina").html("Reporte de Entregas");
+            $("#pagina").html("Reporte de Blanco Limpios");
             table = $('#table').DataTable({
                 stateSave: true,
                 "language": {

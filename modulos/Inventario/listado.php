@@ -84,7 +84,7 @@ $oInventario = new Inventario();
     <script>
         var table;
         $(function() {
-            $("#pagina").html("Pendientes de Rec.");
+            $("#pagina").html("Reporte de Pendientes");
             table = $('#table').DataTable({
                 stateSave: true,
                 "language": {

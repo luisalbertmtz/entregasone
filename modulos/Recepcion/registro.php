@@ -36,7 +36,7 @@ $oArticulos = new Articulos();
                         <?php
                             $db->debug = 0;
                             $array = $oArticulos->getProveedores();
-                            echo "<option value=''>Seleccione el Proveedor</option>";
+                            echo "<label    value=''>Seleccione el Proveedor</label>";
                             foreach ($array as $row) {
                                 echo "<option value='" . $row['idProveedor'] . "'>" . $row['Nombre'] . "</option>";
                             }
@@ -75,7 +75,7 @@ $oArticulos = new Articulos();
     <script src="js/recepcion.js"></script>
     <script>
         $(function() {
-            $("#pagina").html("Recepción");
+            $("#pagina").html("Recepción Blancos limpios");
         });
     </script>
 </body>

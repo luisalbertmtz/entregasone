@@ -24,7 +24,7 @@ include_once('../../snippets/head.php');
             <a class="navbar-brand" href="../../modulos/Entrega/registro.php"><img src="<?php echo PATH; ?>assets/img/entrega-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
               <h5 class="card-title">BLANCOS SUCIOS</h5>
-              <p class="card-text">Registre una entrega</p>
+              <p class="card-text">Registrar una entrega</p>
             </div>
           </div>
         </div>
@@ -34,19 +34,50 @@ include_once('../../snippets/head.php');
           <div class="card">
             <a class="navbar-brand" href="../../modulos/Recepcion/registro.php"><img src="<?php echo PATH; ?>assets/img/recepcion-blancos.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
-              <h5 class="card-title">BLANCOS SUCIOS</h5>
-              <p class="card-text">Registre una recepción</p>
+              <h5 class="card-title">BLANCOS LIMPIOS</h5>
+              <p class="card-text">Registrar una recepción</p>
             </div>
           </div>
         </div>
         
-        <!-- Ayuda -->
+        <!-- Reporte de pendientes -->
         <div class="col">
           <div class="card">
             <a class="navbar-brand" href="../../modulos/Inventario/listado.php"><img src="<?php echo PATH; ?>assets/img/reporte.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
               <h5 class="card-title">REPORTE DE PENDIENTES</h5>
-              <p class="card-text">Reporte de entregas pendientes</p>
+              <p class="card-text">Visualizar</p>
+            </div>
+          </div>
+        </div>
+
+             <!-- Reporte del dia -->
+             <div class="col">
+          <div class="card">
+            <a class="navbar-brand" href="../../modulos/fpdf/reporteDia.php"target="_blank" rel="noopener noreferrer"><img src="<?php echo PATH; ?>assets/img/imprimir.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
+            <div class="card-body">
+              <h5 class="card-title">REPORTE DEL DIA</h5>
+              <p class="card-text">Imprimir PDF</p>
+            </div>
+          </div>
+        </div>
+             <!-- Reporte de pendientes -->
+             <div class="col">
+          <div class="card">
+            <a class="navbar-brand" href="../../modulos/Entrega/reporte.php"><img src="<?php echo PATH; ?>assets/img/reporte2.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
+            <div class="card-body">
+              <h5 class="card-title">REPORTE DE BLANCO SUCIOS</h5>
+              <p class="card-text">visualizar</p>
+            </div>
+          </div>
+        </div>
+             <!-- Reporte de pendientes -->
+             <div class="col">
+          <div class="card">
+            <a class="navbar-brand" href="../../modulos/Recepcion/reporte.php"><img src="<?php echo PATH; ?>assets/img/reporte1.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
+            <div class="card-body">
+              <h5 class="card-title">REPORTE DE BLANCOS LIMPIOS</h5>
+              <p class="card-text">visualizar</p>
             </div>
           </div>
         </div>

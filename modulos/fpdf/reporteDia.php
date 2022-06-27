@@ -2,15 +2,15 @@
 
 
 require "conexion.php";
-require "plantilla.php";
+require "plantillaDia.php";
 
-$sql = "SELECT inv.*, us.nombreCompleto as Usuario, pr.Nombre as Producto,prov.Nombre as Proveedor, cat.Nombre as Categoria
+$sql = "SELECT inv.*, us.nombreCompleto as Usuario, pr.Nombre as Producto,prov.Nombre as Proveedor, cat.Nombre as Categoria, inv.fechaCreacion
             FROM inventario as inv
                 INNER JOIN usuarios as us ON inv.idUsuario = us.idUsuario
                 INNER JOIN productos as pr ON inv.idProducto = pr.idProducto
                 INNER JOIN categorias as cat ON pr.idCategoria = cat.idCategoria
                 INNER JOIN proveedores as prov ON inv.idProveedor = prov.idProveedor
-                WHERE inventario = 2 order by fechaCreacion  desc";
+                WHERE inv.fechaCreacion  >= curdate() order by cantidad asc ";
 $resultado = $mysqli->query($sql);
 
 
