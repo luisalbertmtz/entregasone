@@ -62,8 +62,9 @@ include_once('../../snippets/head.php');
           </div>
         </div>
              <!-- Reporte de pendientes -->
-             <div class="col">
-          <div class="card">
+             
+             <div class="col" >
+          <div class="card" >
             <a class="navbar-brand" href="../../modulos/Entrega/reporte.php"><img src="<?php echo PATH; ?>assets/img/reporte2.jpg" class="card-img-top" alt="Entrega de Blancos"></a>
             <div class="card-body">
               <h5 class="card-title">REPORTE DE BLANCO SUCIOS</h5>

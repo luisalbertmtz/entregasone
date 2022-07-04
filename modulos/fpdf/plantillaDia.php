@@ -10,11 +10,11 @@ function Header()
     // Logo
     $this->Image("Picture1.png", 10, 5, 19 );
     // Arial bold 15
-    $this->SetFont("Arial","B", 13);
+    $this->SetFont("Arial","B", 15);
     // Movernos a la derecha
     $this->Cell(80);
     // Título
-    $this->Cell(30, 5, "Reporte del Dia Blanco sucios y Blanco limpios", 0, 0, "C");
+    $this->Cell(35, 5, "Recepcion Blanco limpios", 0, 0, "C");
     //Fecha
     $this->SetFont("Arial","", 12);
     $this->Cell(130, 5, "Fecha: ".date("d/m/Y"), 0, 1, "C");
